@@ -1,5 +1,5 @@
 layout: page
-title: "PAGE TITLE"
+title: "index.cn"
 permalink: /about/
 
 ## Welcome to GitHub Pages Chinese page
