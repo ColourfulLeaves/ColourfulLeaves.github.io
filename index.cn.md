@@ -1,6 +1,8 @@
+---
 layout: page
 title: "index.cn"
 permalink: /about/
+---
 
 ## Welcome to GitHub Pages Chinese page
 
