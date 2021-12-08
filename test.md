@@ -1,7 +1,8 @@
+---
 layout: page
 title: "test"
 permalink: /a/
-
+---
 
 ## Welcome to GitHub Pages test page
 
