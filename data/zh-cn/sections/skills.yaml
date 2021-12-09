@@ -1,0 +1,40 @@
+# section information
+section:
+  name: 技术特点
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: 硬件设计
+  logo: /images/sections/skills/kubernetes.png
+  summary: "具有自主设计高性能模拟电路和数字电路的能力"
+  url: "https://kubernetes.io/"
+
+- name: 8051 & C51
+  logo: /images/sections/skills/go.png
+  summary: "多年8051开发经验，精通C51语言"
+  url: "https://golang.org/"
+
+- name: ARM & STM32
+  logo: /images/sections/skills/cloud.png
+  summary: "精通Arm底层结构，特别擅长STM32系列单片机的开发"
+
+- name: Python
+  logo: /images/sections/skills/docker.svg
+  summary: "具有多年的python开发经验，可熟练的使用Python完成从算法验证到桌面应用再到物联网开发"
+  url: "https://www.docker.com/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "多年linux平台开发经验"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "非常重视开发过程中的文档管理和软件版本管理，熟练运用Git等工具管理开发过程中的每一个点滴"
+  url: "https://git-scm.com/"
