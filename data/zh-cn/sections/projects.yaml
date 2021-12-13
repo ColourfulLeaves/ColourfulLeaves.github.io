@@ -30,7 +30,7 @@ projects:
   summary: 精度高达0.05°C，宽温域红外测温模块的软硬件开发；用于模块校准的生产软硬件开发。
   tags: ["红外测温", "python"]
 
-- name: 低频系统响应分析仪
+- name: 低频系响应分析仪
   logo: /images/sections/projects/tensorflow.png
   # role: Developer
   # timeline: "Jun 2018 - Present"

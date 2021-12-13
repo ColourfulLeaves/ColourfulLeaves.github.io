@@ -1,10 +1,10 @@
 ---
-title: "Elim模块说明"
+title: "MagicBox低频系统分析仪"
 date: 2021-12-09T08:06:25+06:00
 description: Sample post with multiple images, embedded video ect.
 menu:
   sidebar:
-    name: Elim模块说明
+    name: MagicBox低频系统分析仪
     identifier: magicbox
     parent: bode
     weight: 10
