@@ -1,6 +1,6 @@
 <!doctype html><html lang=zh-cn>
 <head>
-<meta name=generator content="Hugo 0.89.4">
+<meta name=generator content="Hugo 0.90.1">
 <title>Colourful Leaves Studio</title>
 <meta name=description content="七色叶工作室">
 <meta charset=utf-8>
@@ -46,7 +46,7 @@ Colourful Leaves Studio</a>
 <a class=nav-link href=#about>About</a>
 </li>
 <li class=nav-item>
-<a class=nav-link href=#skills>技术特点</a>
+<a class=nav-link href=#skills>专业特长</a>
 </li>
 <li class=nav-item>
 <a class=nav-link href=#projects>成功案例</a>
@@ -200,7 +200,7 @@ English
 <div class="container-fluid section-holder d-flex bg-dimmed">
 <div class="container-fluid anchor pb-5 skills-section">
 <h1 class=text-center>
-<span id=skills></span>技术特点</h1>
+<span id=skills></span>专业特长</h1>
 <div class="container d-flex-block">
 <div class=row id=primary-skills>
 <div class="col-xs-12 col-sm-6 col-lg-4 pt-2">
@@ -333,7 +333,7 @@ python
 <a class=card-header href=javascript:void(0)>
 <div>
 <div class=d-flex>
-<h5 class="card-title mb-0">低频系统响应分析仪</h5>
+<h5 class="card-title mb-0">低频系响应分析仪</h5>
 </div>
 <div class=sub-title>
 <span></span>
@@ -370,61 +370,111 @@ python
 <div class=container>
 <div class=row id=recent-post-cards>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
-<a href=/posts/introduction/ title=Introduction class=post-card-link>
+<a href=/posts/bode/magicbox/ title=MagicBox低频系统分析仪 class=post-card-link>
 <div class=card>
 <div class=card-head>
-<img class=card-img-top src=/posts/introduction/hero.svg alt="Card image cap">
+<img class=card-img-top src=/posts/bode/magicbox/images/forest.jpg alt="Card image cap">
 </div>
 <div class=card-body>
-<h5 class=card-title>Introduction</h5>
-<p class="card-text post-summary"> Greeting! This is an introduction post. This post tests the followings:
-Hero image is in the same directory as the post. This post should be at top of the sidebar. Post author should be the same as specified in author.yaml file. </p>
+<h5 class=card-title>MagicBox低频系统分析仪</h5>
+<p class="card-text post-summary"> 产品特点 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
+基于如此强大的硬件能力，人工智能算法的引入，加之独有的精准调教方法，使此模块在精度和分辨率上，远超业内水平。业内一般精度为0.2-0.5℃，而此模块的精度这可以达到0.05℃，分辨率为0.01℃。
+与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。
+功能规格 尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）
+电压：3.3V
+电流：&lt;5mA(工作） &lt;50nA(休眠）
+输出接口：IIC或uart
+被测温度范围：-0 ~ 600 °C
+工作温度：-20 ~ 85 °C
+​
+关于测温 测温方式可分为接触式和非接触式。
+接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；
+非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。
+在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。
+使用注意事项 在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：
+由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。
+理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
+物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
+红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
+</p>
 </div>
 <div class=card-footer>
-<span class=float-left>June 8, 2020</span>
-<a href=/posts/introduction/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
+<span class=float-left>December 9, 2021</span>
+<a href=/posts/bode/magicbox/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
 </div>
 </div>
 </a>
 </div>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
-<a href=/search/ title="অনুসন্ধানের ফলাফল" class=post-card-link>
+<a href=/posts/thermometer/elim/ title=Elim模块说明 class=post-card-link>
 <div class=card>
 <div class=card-head>
-<img class=card-img-top src=/images/default-hero.jpg alt="Card image cap">
+<img class=card-img-top src=/posts/thermometer/elim/images/forest.jpg alt="Card image cap">
 </div>
 <div class=card-body>
-<h5 class=card-title>অনুসন্ধানের ফলাফল</h5>
-<p class="card-text post-summary"> This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```</p>
+<h5 class=card-title>Elim模块说明</h5>
+<p class="card-text post-summary"> 产品特点 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
+基于如此强大的硬件能力，人工智能算法的引入，加之独有的精准调教方法，使此模块在精度和分辨率上，远超业内水平。业内一般精度为0.2-0.5℃，而此模块的精度这可以达到0.05℃，分辨率为0.01℃。
+与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。
+功能规格 尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）
+电压：3.3V
+电流：&lt;5mA(工作） &lt;50nA(休眠）
+输出接口：IIC或uart
+被测温度范围：-0 ~ 600 °C
+工作温度：-20 ~ 85 °C
+​
+关于测温 测温方式可分为接触式和非接触式。
+接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；
+非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。
+在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。
+使用注意事项 在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：
+由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。
+理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
+物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
+红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
+</p>
 </div>
 <div class=card-footer>
-<span class=float-left>June 8, 2010</span>
-<a href=/search/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
+<span class=float-left>December 9, 2021</span>
+<a href=/posts/thermometer/elim/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
 </div>
 </div>
 </a>
 </div>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
-<a href=/search/ title="Search Results" class=post-card-link>
+<a href=/posts/pcb/post2/ title=PCB设计中必须留意什么间隔规定？ class=post-card-link>
 <div class=card>
 <div class=card-head>
-<img class=card-img-top src=/images/default-hero.jpg alt="Card image cap">
+<img class=card-img-top src=/posts/pcb/post2/images/pcb.jpg alt="Card image cap">
 </div>
 <div class=card-body>
-<h5 class=card-title>Search Results</h5>
-<p class="card-text post-summary"> This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```</p>
+<h5 class=card-title>PCB设计中必须留意什么间隔规定？</h5>
+<p class="card-text post-summary"> 我们在平时的PCB设计中会碰到各式各样的安全性间隔难题，例如像过孔跟焊层的间隔，布线跟布线中间的间隔等全是大家应当要充分考虑的地区。
+大家把这种间隔分成两大类：
+用电安全间隔
+非用电安全间隔
+一、用电安全间隔
+1.输电线中间间隔
+这一间隔必须考虑到PCB生产商的生产量，提议布线与布线中间的间隔不少于2mil。最少线距，也是线到线，线到焊层的间隔。那麼，从大家的生产制造视角考虑得话，自然是在有标准的状况下越大越好啦。一般基本的10mil较为普遍了。
+2.焊层直径与焊层总宽
+依据PCB生产商，焊层直径假如以机械设备打孔方法，最少不可小于0.2毫米，假如以镭射激光打孔方法，提议最少不少于2mil。而直径尺寸公差依据板才不一样稍微有所区别，一般能监管在0.05mm之内，焊层总宽最少不可低0.2毫米。
+3.焊层与焊层中间的间隔
+依据PCB生产商的生产能力，提议焊层与焊层中间间隔不小于0.2毫米。
+4.铜皮与板外中间的间隔
+感应起电铜皮与PCB板外的间隔最好是不小于0.3毫米，如果是大规模铺铜，一般 也是与板外必须有内缩间距，一般设为50mil。
+一般状况下，出自于线路板制成品机械设备考虑到，或是防止铜皮外露在板外很有可能造成的打卷或电气设备短路故障等状况产生，技术工程师常常会将大规模铺铜块相对性于板外内缩50mil，而不是一直将铜皮铺到板边缘。这类铜皮内缩的解决方式有很多种多样。例如板外绘图keepout层，随后设定铺铜与keepout的间距。
+二、非电气设备的安全性间隔
+1.标识符的总宽和高宽比及间隔
+有关丝印油墨的标识符大家一般应用基本的值如：5/306/36mil等。由于当文本太钟头，生产加工包装印刷出去会模模糊糊。
+2.丝印油墨到焊层的间距
+丝印油墨不允许上焊层，由于丝印油墨若盖上焊层，在上锡的情况下丝印油墨处将不可以上锡，进而危害电子器件装贴之。
+一般板厂规定预埋8米il的间隔。假如是由于一些PCB板总面积确实很密不可分，大家保证2mil的间隔也是凑合能够接纳的。那麼，假如丝印油墨在设计方案时一不小心盖过焊层，板厂在生产制造的时候会全自动清除留到焊层上的丝印油墨一部分以确保焊层上锡。因此必须大家留意一下。
+3.机械系统上的三维高宽比和水准间隔
+PCB上元器件在装贴之时要充分考虑水平方向上和室内空间高宽比上是否会与别的机械系统有矛盾。因而在设计方案时，要考虑到到电子器件中间，及其PCB制成品与商品机壳中间，空间布局上的兼容性，为各总体目标目标预埋安全性间隔。</p>
 </div>
 <div class=card-footer>
-<span class=float-left>June 8, 2010</span>
-<a href=/search/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
+<span class=float-left>December 8, 2021</span>
+<a href=/posts/pcb/post2/ title=阅读 class="float-right btn btn-outline-info btn-sm">阅读</a>
 </div>
 </div>
 </a>
@@ -443,7 +493,7 @@ Initial setup Search depends on additional output content type of JSON in config
 <a class=smooth-scroll href=https://colourfulleaves.github.io/#about>About</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>技术特点</a>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>专业特长</a>
 </li>
 <li class=nav-item>
 <a class=smooth-scroll href=https://colourfulleaves.github.io/#projects>成功案例</a>

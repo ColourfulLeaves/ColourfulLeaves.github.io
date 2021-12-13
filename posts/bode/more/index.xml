@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>更多 on Colourful Leaves Studio</title><link>https://colourfulleaves.github.io/posts/bode/more/</link><description>Recent content in 更多 on Colourful Leaves Studio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 08 Dec 2021 08:06:25 +0600</lastBuildDate><atom:link href="https://colourfulleaves.github.io/posts/bode/more/index.xml" rel="self" type="application/rss+xml"/><item><title>Venable6305频率响应分析仪，经典型号，高性能，可升级</title><link>https://colourfulleaves.github.io/posts/bode/more/post2/</link><pubDate>Wed, 08 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/bode/more/post2/</guid><description>Venable6300系列频率响应分析仪结合了最新的模拟和数字技术，以及先进的数字信号处理技术（DSP），以提供多样化测试与分析功能。这一综合性软硬件系统具有非常精密的测试功能，具有10μHz至40MHz的频宽和2个输入端，并受到保护，峰值电压不超过600V。Venable6305可以很好的替换Venable3120, Venable6320可以替换Venable3215。
+Venable著名的基于K系数的软件，现已称为Stability Analysis™ v5.1。该6300系列仪器是您目前用于测量相位/增益和阻抗的最完整、精确且易用的系统。Venable通过行业标准IEEE-488接口或者USB接口运行，可导入/导出至MATLABTM和Excel™，并以.jpeg文件格式保存波德/阻抗图。导出的图片可用于图片展示软件或保存为.wen格式的文件，进行离线数据处理。
+Venable仪器包含了最新的CPLD技术，用以释放专用处理器的功率，从而执行所有数据采集和分析功能。独立处理器处理所有通信功能。最佳性能来源于使用CPLD内部存储器，实现处理器与模拟硬件之间的异步缓冲。6300系列对两个输入端执行同步分析，可靠地收集所有数据。它是真正的多功能仪器，通过坚固的便携式工具箱（仅重12磅），帮助您实现各种应用。工程师和科学家们现在可通过价格合理的紧凑系统——Venable 6300系列，获取用于生产、研发实验室、学术或现场操作的速度和技术。
+除了测试系统的频率响应外，6300系列频率响应分析仪的控制软件还包括了控制线路辅助设计和频域运算功能。针对电源供应器的控制补偿，提供了常用的三种线路，使用者可依照其电源供应器的控制方式，选择适合的线路种类。先量测系统原来的频率响应后，设定预计的设计目标：相位边限(PhaseMargin)及交越频率(CrossFrequency)等，软件即可自动运算出控制线路中最适合的电阻及电容值。使用者再加以实际验证即可。这个功能更可帮设计者节省大量时间，还能达到优化的设计结果。
+6300系列还具有很好的可升级性。例如Venable6305的频率范围10uHz-5MHz, 可以升级至20/40MHz，采集通道可以从2通道升级至3/4通道或者增加一个数字通道，保护用户的投资。
+Venable成为稳定性分析的开拓者已有30多年，将继续为测试和测量客户提供最先进的仪器和分析软件。
+电源环路测试示意图
+电源环路波特图
+电源在线输入/输出阻抗测试示意图
+阻抗图
+电源PSRR测试示意图
+PSRR曲线
+主要技术指标：
+信号源
+频率范围：
+正弦波10μHz至5MHz（6305）
+正弦波10μHz至20MHz（6320）
+正弦波10μHz至40MHz（6340）
+矩形波10uHz至1MHz（矩形波）
+AC振幅
+1mV至10V
+直流偏压
+±10V，10mV步进
+模式:
+单频，正弦扫描和线性扫描
+对数扫描
+0.1–2000步，十进制步进，10uHz–40MHz每步
+输出振幅补偿：
+动态调整输出，通过Venable软件控制，保持对电路的恒定电平输入
+输出阻抗：
+可切换50欧姆/2欧姆
+输出配置：
+单端浮地
+机箱接地隔离：
+600V
+分析
+测量频率范围：
+10μHz至5MHz (6305)
+10μHz至20MHz (6320)
+10μHz至40MHz (6340)
+输入方式：
+单端浮地输入
+可选输入阻抗：
+50欧姆或1兆欧（默认）
+测量精度：
+± 0.03dB + 0.1dB/MHz；
+± 0.4deg + 1deg/MHz
+测量技术：
+窄带DFT
+延迟时间：
+0-100秒
+积分时间：
+20msec至100ksec
+积分周期：
+1-9999周期
+输入耦合：</description></item><item><title>频率响应分析仪Bode 100—测试电源系统环路响应的利器</title><link>https://colourfulleaves.github.io/posts/bode/more/post1/</link><pubDate>Wed, 08 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/bode/more/post1/</guid><description>频率响应分析仪Bode 100 是执行从1 Hz到50 MHz的准确度，快速频率扫描测量的专业解决方案，这对于电源设计和稳定的环路操作至关重要。
+BODE100环路分析仪的主要功能是量测待测物在频域上的特性，了解其性能及稳定性，并可辅助控制线路的设计。因为设计时没有正确评估系统的稳定性。但这种特性无法直接由电流拉载的时域测试来得到，必须经由Bode100频率响应分析仪的使用，才能得到系统的频率响应图，来判读出稳定度的特性。而这种频率响应的测试，不仅速度快，节省大量测试时间。
+而Bode 100 不仅仅是频率响应分析仪，它也可作为：
+矢量网分分析仪
+阻抗分析仪
+增益相位分析仪
+正弦波发生器
+产品特点：
+稳定性分析
+分析电路控制系统生成伯德图和奈奎斯特图
+复阻抗
+分析被动电子元件和有源电子电路
+频率响应
+电子系统的复杂传递函数（增益/相位）
+谐振频率
+高Q值谐振峰值，ESR测量，RFID
+传输/反射系数
+表征电缆，滤波器，放大器，S参数测量
+自动化测量
+通过USB接口很方便集成到自动化系统
+Bode软件分析
+近期，安泰测试为西安某高校提供了BODE100现场演示，并获得客户高度认可，这对电源测试的客户来说，无疑是测试电源系统的环路响应的“利器”，如需了解环路分析仪BODE100更多产品应用，欢迎关注安泰测试网。</description></item></channel></rss>

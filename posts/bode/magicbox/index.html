@@ -1,0 +1,260 @@
+<!doctype html><html>
+<head>
+<title>MagicBox低频系统分析仪</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<link rel=stylesheet href=/css/layouts/main.css>
+<link rel=stylesheet href=/css/navigators/navbar.css>
+<link rel=stylesheet href=/css/plyr.css>
+<link rel=stylesheet href=/css/flag-icon.min.css>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
+<meta property="og:title" content="MagicBox低频系统分析仪">
+<meta property="og:description" content="Sample post with multiple images, embedded video ect.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://colourfulleaves.github.io/posts/bode/magicbox/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-09T08:06:25+06:00">
+<meta property="article:modified_time" content="2021-12-09T08:06:25+06:00">
+<meta name=description content="Sample post with multiple images, embedded video ect.">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
+<link rel=stylesheet href=/css/layouts/single.css>
+<link rel=stylesheet href=/css/navigators/sidebar.css>
+<link rel=stylesheet href=/css/style.css>
+</head>
+<body data-spy=scroll data-target=#TableOfContents data-offset=80>
+<div class="container-fluid bg-dimmed wrapper">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<div class=container>
+<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span>
+</button>
+<a class=navbar-brand href=/>
+Colourful Leaves Studio</a>
+<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<ul class="navbar-nav ml-auto">
+</ul>
+</div>
+</div>
+</nav>
+<section class=sidebar-section id=sidebar-section>
+<div class=sidebar-holder>
+<div class=sidebar id=sidebar>
+<form class=mx-auto method=get action=/search>
+<input type=text name=keyword placeholder=Search data-search id=search-box>
+</form>
+<div class=sidebar-tree>
+<ul class=tree id=tree>
+<li id=list-heading><a href=/posts data-filter=all>博文</a></li>
+<div class=subtree>
+<li>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/bode/>低频系统响应分析仪</a>
+<ul class=active>
+<li><a class=active href=/posts/bode/magicbox/ title=MagicBox低频系统分析仪>MagicBox低频系统分析仪</a></li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/bode/more/>更多</a>
+<ul>
+<li><a href=/posts/bode/more/post2/ title=Venable6305频率响应分析仪，经典型号，高性能，可升级>Venable6305频率响应分析仪，经典型号，高性能，可升级</a></li>
+<li><a href=/posts/bode/more/post1/ title="频率响应分析仪Bode 100—测试电源系统环路响应的利器">频率响应分析仪Bode 100—测试电源系统环路响应的利器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/thermometer/>红外测温</a>
+<ul>
+<li><a href=/posts/thermometer/elim/ title=Elim模块说明>Elim模块说明</a></li>
+<li><a href=/posts/thermometer/post1/ title=红外测温原理>红外测温原理</a></li>
+<li><a href=/posts/thermometer/post2/ title=深度解析红外发射率！>深度解析红外发射率！</a></li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/pcb/>PCB设计</a>
+<ul>
+<li><a href=/posts/pcb/post1/ title=PCB设计怎么才能敷好铜？>PCB设计怎么才能敷好铜？</a></li>
+<li><a href=/posts/pcb/post3/ title=PCB设计中如何巧妙地放置电子元件？>PCB设计中如何巧妙地放置电子元件？</a></li>
+<li><a href=/posts/pcb/post2/ title=PCB设计中必须留意什么间隔规定？>PCB设计中必须留意什么间隔规定？</a></li>
+</ul>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class=content-section id=content-section>
+<div class=content>
+<div class="container p-0 read-area">
+<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://colourfulleaves.github.io/posts/bode/magicbox/images/forest.jpg)>
+</div>
+<div class=page-content>
+<div class="author-profile ml-auto align-self-lg-center">
+<img class=rounded-circle src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_120x120_fit_box_3.png alt="Author Image">
+<h5 class=author-name>七色叶工作室</h5>
+<p>December 9, 2021</p>
+</div>
+<div class=title>
+<h1>MagicBox低频系统分析仪</h1>
+</div>
+<div class=post-content id=post-content>
+<h3 id=产品特点>产品特点</h3>
+<p>此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。</p>
+<p>基于如此强大的硬件能力，人工智能算法的引入，加之独有的精准调教方法，使此模块在精度和分辨率上，远超业内水平。业内一般精度为0.2-0.5℃，而此模块的精度这可以达到0.05℃，分辨率为0.01℃。</p>
+<p>与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。</p>
+<h3 id=功能规格>功能规格</h3>
+<p>尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）</p>
+<p>电压：3.3V</p>
+<p>电流：&lt;5mA(工作） &lt;50nA(休眠）</p>
+<p>输出接口：IIC或uart</p>
+<p>被测温度范围：-0 ~ 600 °C</p>
+<p>工作温度：-20 ~ 85 °C</p>
+<p>​</p>
+<h3 id=关于测温>关于测温</h3>
+<p>测温方式可分为接触式和非接触式。</p>
+<p>接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；</p>
+<p>非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。</p>
+<p>在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。</p>
+<h3 id=使用注意事项>使用注意事项</h3>
+<p>在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：</p>
+<ul>
+<li>
+<p>由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。</p>
+</li>
+<li>
+<p>理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。</p>
+</li>
+<li>
+<p>物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。</p>
+</li>
+<li>
+<p>红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。</p>
+</li>
+</ul>
+</div>
+<div class="row pl-3 pr-3">
+<div class="col-md-6 share-buttons">
+</div>
+<div class="col-md-6 btn-improve-page">
+<a href=https://github.com/ColourfulLeaves/ColourfulLeaves.github.io.git/edit/main/content/posts/bode/magicbox/index.md title=改善此页面 target=_blank rel=noopener>
+<i class="fas fa-code-branch"></i>
+改善此页面
+</a>
+</div>
+</div>
+<hr>
+<div class="row next-prev-navigator">
+<div class="col-md-12 next-article">
+<a href=/posts/bode/more/post2/ title=Venable6305频率响应分析仪，经典型号，高性能，可升级 class="btn btn-outline-info">
+<div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+<div class=next-prev-text>Venable6305频率响应分析仪，经典型号，高性能，可升级</div>
+</a>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a>
+</section>
+<section class=toc-section id=toc-section>
+<div class=toc-holder>
+<h5 class="text-center pl-3">目录</h5>
+<hr>
+<div class=toc>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#产品特点>产品特点</a></li>
+<li><a href=#功能规格>功能规格</a></li>
+<li><a href=#关于测温>关于测温</a></li>
+<li><a href=#使用注意事项>使用注意事项</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+</div>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+<div class="container pt-5">
+<div class="row text-left">
+<div class="col-md-4 col-sm-12">
+<h5>导航</h5>
+<ul>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#about>About</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>专业特长</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#projects>成功案例</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#recent-posts>最新文章</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<h5>联系方式:</h5>
+<ul>
+<li><a href=mailto:sam6525@163.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>sam6525@163.com</span>
+</a></li>
+<li><a href=https://github.com/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-github"></i></span> <span>colourfulleaves</span>
+</a></li>
+<li><a href=https://www.linkedin.com/in/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-linkedin"></i></span> <span>七色叶工作室</span>
+</a></li>
+<li><span><i class="fas fa-phone-alt"></i></span> <span>+8618521516525</span></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<p>通过电子邮件接收最新信息</p>
+<form method=post action=https://blogtrottr.com>
+<div class=form-group>
+<input type=email class=form-control name=btr_email placeholder="填入 E-mail"><br>
+<input type=hidden name=btr_url value=https://colourfulleaves.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">输入您的电子邮件地址，即表示您同意接收本网站的时事通讯</small>
+<button type=submit class="btn btn-info"> 提交 </button>
+</form>
+</div>
+</div>
+</div>
+<hr>
+<div class=container>
+<div class="row text-left">
+<div class=col-md-4>
+<a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener>
+<img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
+Toha
+</a>
+</div>
+<div class="col-md-4 text-center">© 2020 Copyright.</div>
+<div class="col-md-4 text-right">
+<a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
+<script type=text/javascript src=/js/popper.min.js></script>
+<script type=text/javascript src=/js/bootstrap.min.js></script>
+<script type=text/javascript src=/js/navbar.js></script>
+<script type=text/javascript src=/js/plyr.js></script>
+<script type=text/javascript src=/js/main.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
+<script src=/js/single.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!doctype html><html>
+<head>
+<title>频率响应分析仪Bode 100—测试电源系统环路响应的利器 </title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<link rel=stylesheet href=/css/layouts/main.css>
+<link rel=stylesheet href=/css/navigators/navbar.css>
+<link rel=stylesheet href=/css/plyr.css>
+<link rel=stylesheet href=/css/flag-icon.min.css>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
+<meta property="og:title" content="频率响应分析仪Bode 100—测试电源系统环路响应的利器 ">
+<meta property="og:description" content="Sample post with multiple images, embedded video ect.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://colourfulleaves.github.io/posts/bode/more/post1/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-08T08:06:25+06:00">
+<meta property="article:modified_time" content="2021-12-08T08:06:25+06:00">
+<meta name=description content="Sample post with multiple images, embedded video ect.">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
+<link rel=stylesheet href=/css/layouts/single.css>
+<link rel=stylesheet href=/css/navigators/sidebar.css>
+<link rel=stylesheet href=/css/style.css>
+</head>
+<body data-spy=scroll data-target=#TableOfContents data-offset=80>
+<div class="container-fluid bg-dimmed wrapper">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<div class=container>
+<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span>
+</button>
+<a class=navbar-brand href=/>
+Colourful Leaves Studio</a>
+<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<ul class="navbar-nav ml-auto">
+</ul>
+</div>
+</div>
+</nav>
+<section class=sidebar-section id=sidebar-section>
+<div class=sidebar-holder>
+<div class=sidebar id=sidebar>
+<form class=mx-auto method=get action=/search>
+<input type=text name=keyword placeholder=Search data-search id=search-box>
+</form>
+<div class=sidebar-tree>
+<ul class=tree id=tree>
+<li id=list-heading><a href=/posts data-filter=all>博文</a></li>
+<div class=subtree>
+<li>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/bode/>低频系统响应分析仪</a>
+<ul class=active>
+<li><a href=/posts/bode/magicbox/ title=MagicBox低频系统分析仪>MagicBox低频系统分析仪</a></li>
+<li>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/bode/more/>更多</a>
+<ul class=active>
+<li><a href=/posts/bode/more/post2/ title=Venable6305频率响应分析仪，经典型号，高性能，可升级>Venable6305频率响应分析仪，经典型号，高性能，可升级</a></li>
+<li><a class=active href=/posts/bode/more/post1/ title="频率响应分析仪Bode 100—测试电源系统环路响应的利器">频率响应分析仪Bode 100—测试电源系统环路响应的利器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/thermometer/>红外测温</a>
+<ul>
+<li><a href=/posts/thermometer/elim/ title=Elim模块说明>Elim模块说明</a></li>
+<li><a href=/posts/thermometer/post1/ title=红外测温原理>红外测温原理</a></li>
+<li><a href=/posts/thermometer/post2/ title=深度解析红外发射率！>深度解析红外发射率！</a></li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/pcb/>PCB设计</a>
+<ul>
+<li><a href=/posts/pcb/post1/ title=PCB设计怎么才能敷好铜？>PCB设计怎么才能敷好铜？</a></li>
+<li><a href=/posts/pcb/post3/ title=PCB设计中如何巧妙地放置电子元件？>PCB设计中如何巧妙地放置电子元件？</a></li>
+<li><a href=/posts/pcb/post2/ title=PCB设计中必须留意什么间隔规定？>PCB设计中必须留意什么间隔规定？</a></li>
+</ul>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class=content-section id=content-section>
+<div class=content>
+<div class="container p-0 read-area">
+<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://colourfulleaves.github.io/posts/bode/more/post1/images/forest.jpg)>
+</div>
+<div class=page-content>
+<div class="author-profile ml-auto align-self-lg-center">
+<img class=rounded-circle src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_120x120_fit_box_3.png alt="Author Image">
+<h5 class=author-name>七色叶工作室</h5>
+<p>December 8, 2021</p>
+</div>
+<div class=title>
+<h1>频率响应分析仪Bode 100—测试电源系统环路响应的利器 </h1>
+</div>
+<div class=post-content id=post-content>
+<p>频率响应分析仪Bode 100 是执行从1 Hz到50 MHz的准确度，快速频率扫描测量的专业解决方案，这对于电源设计和稳定的环路操作至关重要。</p>
+<p>BODE100环路分析仪的主要功能是量测待测物在频域上的特性，了解其性能及稳定性，并可辅助控制线路的设计。因为设计时没有正确评估系统的稳定性。但这种特性无法直接由电流拉载的时域测试来得到，必须经由Bode100频率响应分析仪的使用，才能得到系统的频率响应图，来判读出稳定度的特性。而这种频率响应的测试，不仅速度快，节省大量测试时间。</p>
+<img src=/posts/bode/post1/images/1.png class=center>
+<p>而Bode 100 不仅仅是频率响应分析仪，它也可作为：</p>
+<p>矢量网分分析仪</p>
+<p>阻抗分析仪</p>
+<p>增益相位分析仪</p>
+<p>正弦波发生器</p>
+<img src=/posts/bode/post1/images/2.png class=center>
+<img src=/posts/bode/post1/images/3.png class=center>
+<p>产品特点：</p>
+<p>稳定性分析</p>
+<p>分析电路控制系统生成伯德图和奈奎斯特图</p>
+<p>复阻抗</p>
+<p>分析被动电子元件和有源电子电路</p>
+<p>频率响应</p>
+<p>电子系统的复杂传递函数（增益/相位）</p>
+<p>谐振频率</p>
+<p>高Q值谐振峰值，ESR测量，RFID</p>
+<p>传输/反射系数</p>
+<p>表征电缆，滤波器，放大器，S参数测量</p>
+<p>自动化测量</p>
+<p>通过USB接口很方便集成到自动化系统</p>
+<p>Bode软件分析</p>
+<p>近期，安泰测试为西安某高校提供了BODE100现场演示，并获得客户高度认可，这对电源测试的客户来说，无疑是测试电源系统的环路响应的“利器”，如需了解环路分析仪BODE100更多产品应用，欢迎关注安泰测试网。</p>
+</div>
+<div class="row pl-3 pr-3">
+<div class="col-md-6 share-buttons">
+</div>
+<div class="col-md-6 btn-improve-page">
+<a href=https://github.com/ColourfulLeaves/ColourfulLeaves.github.io.git/edit/main/content/posts/bode/more/post1/index.md title=改善此页面 target=_blank rel=noopener>
+<i class="fas fa-code-branch"></i>
+改善此页面
+</a>
+</div>
+</div>
+<hr>
+<div class="row next-prev-navigator">
+<div class="col-md-6 previous-article">
+<a href=/posts/bode/more/post2/ title=Venable6305频率响应分析仪，经典型号，高性能，可升级 class="btn btn-outline-info">
+<div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+<div class=next-prev-text>Venable6305频率响应分析仪，经典型号，高性能，可升级</div>
+</a>
+</div>
+<div class="col-md-6 next-article">
+<a href=/posts/thermometer/elim/ title=Elim模块说明 class="btn btn-outline-info">
+<div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+<div class=next-prev-text>Elim模块说明</div>
+</a>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a>
+</section>
+<section class=toc-section id=toc-section>
+<div class=toc-holder>
+<h5 class="text-center pl-3">目录</h5>
+<hr>
+<div class=toc>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</section>
+</div>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+<div class="container pt-5">
+<div class="row text-left">
+<div class="col-md-4 col-sm-12">
+<h5>导航</h5>
+<ul>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#about>About</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>专业特长</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#projects>成功案例</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#recent-posts>最新文章</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<h5>联系方式:</h5>
+<ul>
+<li><a href=mailto:sam6525@163.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>sam6525@163.com</span>
+</a></li>
+<li><a href=https://github.com/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-github"></i></span> <span>colourfulleaves</span>
+</a></li>
+<li><a href=https://www.linkedin.com/in/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-linkedin"></i></span> <span>七色叶工作室</span>
+</a></li>
+<li><span><i class="fas fa-phone-alt"></i></span> <span>+8618521516525</span></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<p>通过电子邮件接收最新信息</p>
+<form method=post action=https://blogtrottr.com>
+<div class=form-group>
+<input type=email class=form-control name=btr_email placeholder="填入 E-mail"><br>
+<input type=hidden name=btr_url value=https://colourfulleaves.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">输入您的电子邮件地址，即表示您同意接收本网站的时事通讯</small>
+<button type=submit class="btn btn-info"> 提交 </button>
+</form>
+</div>
+</div>
+</div>
+<hr>
+<div class=container>
+<div class="row text-left">
+<div class=col-md-4>
+<a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener>
+<img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
+Toha
+</a>
+</div>
+<div class="col-md-4 text-center">© 2020 Copyright.</div>
+<div class="col-md-4 text-right">
+<a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
+<script type=text/javascript src=/js/popper.min.js></script>
+<script type=text/javascript src=/js/bootstrap.min.js></script>
+<script type=text/javascript src=/js/navbar.js></script>
+<script type=text/javascript src=/js/plyr.js></script>
+<script type=text/javascript src=/js/main.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
+<script src=/js/single.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

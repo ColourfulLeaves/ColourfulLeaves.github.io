@@ -1,0 +1,238 @@
+<!doctype html><html>
+<head>
+<title>PCB设计中必须留意什么间隔规定？</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<link rel=stylesheet href=/css/layouts/main.css>
+<link rel=stylesheet href=/css/navigators/navbar.css>
+<link rel=stylesheet href=/css/plyr.css>
+<link rel=stylesheet href=/css/flag-icon.min.css>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
+<meta property="og:title" content="PCB设计中必须留意什么间隔规定？">
+<meta property="og:description" content="Sample post with multiple images, embedded video ect.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://colourfulleaves.github.io/posts/pcb/post2/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-08T08:16:25+06:00">
+<meta property="article:modified_time" content="2021-12-08T08:16:25+06:00">
+<meta name=description content="Sample post with multiple images, embedded video ect.">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
+<link rel=stylesheet href=/css/layouts/single.css>
+<link rel=stylesheet href=/css/navigators/sidebar.css>
+<link rel=stylesheet href=/css/style.css>
+</head>
+<body data-spy=scroll data-target=#TableOfContents data-offset=80>
+<div class="container-fluid bg-dimmed wrapper">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<div class=container>
+<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span>
+</button>
+<a class=navbar-brand href=/>
+Colourful Leaves Studio</a>
+<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<ul class="navbar-nav ml-auto">
+</ul>
+</div>
+</div>
+</nav>
+<section class=sidebar-section id=sidebar-section>
+<div class=sidebar-holder>
+<div class=sidebar id=sidebar>
+<form class=mx-auto method=get action=/search>
+<input type=text name=keyword placeholder=Search data-search id=search-box>
+</form>
+<div class=sidebar-tree>
+<ul class=tree id=tree>
+<li id=list-heading><a href=/posts data-filter=all>博文</a></li>
+<div class=subtree>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/bode/>低频系统响应分析仪</a>
+<ul>
+<li><a href=/posts/bode/magicbox/ title=MagicBox低频系统分析仪>MagicBox低频系统分析仪</a></li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/bode/more/>更多</a>
+<ul>
+<li><a href=/posts/bode/more/post2/ title=Venable6305频率响应分析仪，经典型号，高性能，可升级>Venable6305频率响应分析仪，经典型号，高性能，可升级</a></li>
+<li><a href=/posts/bode/more/post1/ title="频率响应分析仪Bode 100—测试电源系统环路响应的利器">频率响应分析仪Bode 100—测试电源系统环路响应的利器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/thermometer/>红外测温</a>
+<ul>
+<li><a href=/posts/thermometer/elim/ title=Elim模块说明>Elim模块说明</a></li>
+<li><a href=/posts/thermometer/post1/ title=红外测温原理>红外测温原理</a></li>
+<li><a href=/posts/thermometer/post2/ title=深度解析红外发射率！>深度解析红外发射率！</a></li>
+</ul>
+</li>
+<li>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/pcb/>PCB设计</a>
+<ul class=active>
+<li><a href=/posts/pcb/post1/ title=PCB设计怎么才能敷好铜？>PCB设计怎么才能敷好铜？</a></li>
+<li><a href=/posts/pcb/post3/ title=PCB设计中如何巧妙地放置电子元件？>PCB设计中如何巧妙地放置电子元件？</a></li>
+<li><a class=active href=/posts/pcb/post2/ title=PCB设计中必须留意什么间隔规定？>PCB设计中必须留意什么间隔规定？</a></li>
+</ul>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class=content-section id=content-section>
+<div class=content>
+<div class="container p-0 read-area">
+<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://colourfulleaves.github.io/posts/pcb/post2/images/pcb.jpg)>
+</div>
+<div class=page-content>
+<div class="author-profile ml-auto align-self-lg-center">
+<img class=rounded-circle src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_120x120_fit_box_3.png alt="Author Image">
+<h5 class=author-name>七色叶工作室</h5>
+<p>December 8, 2021</p>
+</div>
+<div class=title>
+<h1>PCB设计中必须留意什么间隔规定？</h1>
+</div>
+<div class=post-content id=post-content>
+<p>我们在平时的PCB设计中会碰到各式各样的安全性间隔难题，例如像过孔跟焊层的间隔，布线跟布线中间的间隔等全是大家应当要充分考虑的地区。</p>
+<p>大家把这种间隔分成两大类：</p>
+<p>用电安全间隔</p>
+<p>非用电安全间隔</p>
+<p>一、用电安全间隔</p>
+<p>1.输电线中间间隔</p>
+<p>这一间隔必须考虑到PCB生产商的生产量，提议布线与布线中间的间隔不少于2mil。最少线距，也是线到线，线到焊层的间隔。那麼，从大家的生产制造视角考虑得话，自然是在有标准的状况下越大越好啦。一般基本的10mil较为普遍了。</p>
+<p>2.焊层直径与焊层总宽</p>
+<p>依据PCB生产商，焊层直径假如以机械设备打孔方法，最少不可小于0.2毫米，假如以镭射激光打孔方法，提议最少不少于2mil。而直径尺寸公差依据板才不一样稍微有所区别，一般能监管在0.05mm之内，焊层总宽最少不可低0.2毫米。</p>
+<p>3.焊层与焊层中间的间隔</p>
+<p>依据PCB生产商的生产能力，提议焊层与焊层中间间隔不小于0.2毫米。</p>
+<p>4.铜皮与板外中间的间隔</p>
+<p>感应起电铜皮与PCB板外的间隔最好是不小于0.3毫米，如果是大规模铺铜，一般 也是与板外必须有内缩间距，一般设为50mil。</p>
+<p>一般状况下，出自于线路板制成品机械设备考虑到，或是防止铜皮外露在板外很有可能造成的打卷或电气设备短路故障等状况产生，技术工程师常常会将大规模铺铜块相对性于板外内缩50mil，而不是一直将铜皮铺到板边缘。这类铜皮内缩的解决方式有很多种多样。例如板外绘图keepout层，随后设定铺铜与keepout的间距。</p>
+<p>二、非电气设备的安全性间隔</p>
+<p>1.标识符的总宽和高宽比及间隔</p>
+<p>有关丝印油墨的标识符大家一般应用基本的值如：5/306/36mil等。由于当文本太钟头，生产加工包装印刷出去会模模糊糊。</p>
+<p>2.丝印油墨到焊层的间距</p>
+<p>丝印油墨不允许上焊层，由于丝印油墨若盖上焊层，在上锡的情况下丝印油墨处将不可以上锡，进而危害电子器件装贴之。</p>
+<p>一般板厂规定预埋8米il的间隔。假如是由于一些PCB板总面积确实很密不可分，大家保证2mil的间隔也是凑合能够接纳的。那麼，假如丝印油墨在设计方案时一不小心盖过焊层，板厂在生产制造的时候会全自动清除留到焊层上的丝印油墨一部分以确保焊层上锡。因此必须大家留意一下。</p>
+<p>3.机械系统上的三维高宽比和水准间隔</p>
+<p>PCB上元器件在装贴之时要充分考虑水平方向上和室内空间高宽比上是否会与别的机械系统有矛盾。因而在设计方案时，要考虑到到电子器件中间，及其PCB制成品与商品机壳中间，空间布局上的兼容性，为各总体目标目标预埋安全性间隔。</p>
+</div>
+<div class="row pl-3 pr-3">
+<div class="col-md-6 share-buttons">
+</div>
+<div class="col-md-6 btn-improve-page">
+<a href=https://github.com/ColourfulLeaves/ColourfulLeaves.github.io.git/edit/main/content/posts/pcb/post2/index.md title=改善此页面 target=_blank rel=noopener>
+<i class="fas fa-code-branch"></i>
+改善此页面
+</a>
+</div>
+</div>
+<hr>
+<div class="row next-prev-navigator">
+<div class="col-md-6 previous-article">
+<a href=/posts/pcb/post3/ title=PCB设计中如何巧妙地放置电子元件？ class="btn btn-outline-info">
+<div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+<div class=next-prev-text>PCB设计中如何巧妙地放置电子元件？</div>
+</a>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a>
+</section>
+<section class=toc-section id=toc-section>
+<div class=toc-holder>
+<h5 class="text-center pl-3">目录</h5>
+<hr>
+<div class=toc>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</section>
+</div>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+<div class="container pt-5">
+<div class="row text-left">
+<div class="col-md-4 col-sm-12">
+<h5>导航</h5>
+<ul>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#about>About</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>专业特长</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#projects>成功案例</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#recent-posts>最新文章</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<h5>联系方式:</h5>
+<ul>
+<li><a href=mailto:sam6525@163.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>sam6525@163.com</span>
+</a></li>
+<li><a href=https://github.com/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-github"></i></span> <span>colourfulleaves</span>
+</a></li>
+<li><a href=https://www.linkedin.com/in/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-linkedin"></i></span> <span>七色叶工作室</span>
+</a></li>
+<li><span><i class="fas fa-phone-alt"></i></span> <span>+8618521516525</span></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<p>通过电子邮件接收最新信息</p>
+<form method=post action=https://blogtrottr.com>
+<div class=form-group>
+<input type=email class=form-control name=btr_email placeholder="填入 E-mail"><br>
+<input type=hidden name=btr_url value=https://colourfulleaves.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">输入您的电子邮件地址，即表示您同意接收本网站的时事通讯</small>
+<button type=submit class="btn btn-info"> 提交 </button>
+</form>
+</div>
+</div>
+</div>
+<hr>
+<div class=container>
+<div class="row text-left">
+<div class=col-md-4>
+<a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener>
+<img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
+Toha
+</a>
+</div>
+<div class="col-md-4 text-center">© 2020 Copyright.</div>
+<div class="col-md-4 text-right">
+<a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
+<script type=text/javascript src=/js/popper.min.js></script>
+<script type=text/javascript src=/js/bootstrap.min.js></script>
+<script type=text/javascript src=/js/navbar.js></script>
+<script type=text/javascript src=/js/plyr.js></script>
+<script type=text/javascript src=/js/main.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
+<script src=/js/single.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

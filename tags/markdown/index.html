@@ -1,0 +1,387 @@
+<!doctype html><html>
+<head>
+<title>Markdown</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<link rel=stylesheet href=/css/layouts/main.css>
+<link rel=stylesheet href=/css/navigators/navbar.css>
+<link rel=stylesheet href=/css/plyr.css>
+<link rel=stylesheet href=/css/flag-icon.min.css>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
+<meta property="og:title" content="Markdown">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://colourfulleaves.github.io/tags/markdown/">
+<link rel=stylesheet href=/css/layouts/list.css>
+<link rel=stylesheet href=/css/navigators/sidebar.css>
+<link rel=stylesheet href=/css/style.css>
+</head>
+<body data-spy=scroll data-target=#TableOfContents data-offset=80>
+<div class="container-fluid bg-dimmed wrapper">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<div class=container>
+<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span>
+</button>
+<a class=navbar-brand href=/>
+Colourful Leaves Studio</a>
+<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<ul class="navbar-nav ml-auto">
+</ul>
+</div>
+</div>
+</nav>
+<section class=sidebar-section id=sidebar-section>
+<div class=sidebar-holder>
+<div class=sidebar id=sidebar>
+<form class=mx-auto method=get action=/search>
+<input type=text name=keyword placeholder=Search data-search id=search-box>
+</form>
+<div class=sidebar-tree>
+<ul class=tree id=tree>
+<li id=list-heading><a href=/tags data-filter=all>标签</a></li>
+<div class="subtree taxonomy-terms">
+<li><a class=taxonomy-term href=https://colourfulleaves.github.io/tags/content-organization/ data-taxonomy-term=content-organization><span class=taxonomy-label>Content Organization</span></a></li>
+<li><a class="taxonomy-term active" href=https://colourfulleaves.github.io/tags/markdown/ data-taxonomy-term=markdown><span class=taxonomy-label>Markdown</span></a></li>
+<li><a class=taxonomy-term href=https://colourfulleaves.github.io/tags/multi-lingual/ data-taxonomy-term=multi-lingual><span class=taxonomy-label>Multi-lingual</span></a></li>
+<li><a class=taxonomy-term href=https://colourfulleaves.github.io/tags/pcb/ data-taxonomy-term=pcb><span class=taxonomy-label>pcb</span></a></li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class=content-section id=content-section>
+<div class="content container-fluid" id=content>
+<div class="container-fluid post-card-holder" id=post-card-holder>
+<div class=post-card>
+<a href=/posts/thermometer/elim/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/thermometer/elim/images/forest.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>Elim模块说明</h5>
+<p class="card-text post-summary">产品特点 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
+基于如此强大的硬件能力，人工智能算法的引入，加之独有的精准调教方法，使此模块在精度和分辨率上，远超业内水平。业内一般精度为0.2-0.5℃，而此模块的精度这可以达到0.05℃，分辨率为0.01℃。
+与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。
+功能规格 尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）
+电压：3.3V
+电流：&lt;5mA(工作） &lt;50nA(休眠）
+输出接口：IIC或uart
+被测温度范围：-0 ~ 600 °C
+工作温度：-20 ~ 85 °C
+​
+关于测温 测温方式可分为接触式和非接触式。
+接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；
+非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。
+在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。
+使用注意事项 在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：
+由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。
+理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
+物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
+红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
+</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 9, 2021</span>
+<a href=/posts/thermometer/elim/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/bode/magicbox/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/bode/magicbox/images/forest.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>MagicBox低频系统分析仪</h5>
+<p class="card-text post-summary">产品特点 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
+基于如此强大的硬件能力，人工智能算法的引入，加之独有的精准调教方法，使此模块在精度和分辨率上，远超业内水平。业内一般精度为0.2-0.5℃，而此模块的精度这可以达到0.05℃，分辨率为0.01℃。
+与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。
+功能规格 尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）
+电压：3.3V
+电流：&lt;5mA(工作） &lt;50nA(休眠）
+输出接口：IIC或uart
+被测温度范围：-0 ~ 600 °C
+工作温度：-20 ~ 85 °C
+​
+关于测温 测温方式可分为接触式和非接触式。
+接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；
+非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。
+在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。
+使用注意事项 在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：
+由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。
+理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
+物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
+红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
+</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 9, 2021</span>
+<a href=/posts/bode/magicbox/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/bode/more/post2/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/bode/more/post2/images/forest.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>Venable6305频率响应分析仪，经典型号，高性能，可升级</h5>
+<p class="card-text post-summary">Venable6300系列频率响应分析仪结合了最新的模拟和数字技术，以及先进的数字信号处理技术（DSP），以提供多样化测试与分析功能。这一综合性软硬件系统具有非常精密的测试功能，具有10μHz至40MHz的频宽和2个输入端，并受到保护，峰值电压不超过600V。Venable6305可以很好的替换Venable3120, Venable6320可以替换Venable3215。
+Venable著名的基于K系数的软件，现已称为Stability Analysis™ v5.1。该6300系列仪器是您目前用于测量相位/增益和阻抗的最完整、精确且易用的系统。Venable通过行业标准IEEE-488接口或者USB接口运行，可导入/导出至MATLABTM和Excel™，并以.jpeg文件格式保存波德/阻抗图。导出的图片可用于图片展示软件或保存为.wen格式的文件，进行离线数据处理。
+Venable仪器包含了最新的CPLD技术，用以释放专用处理器的功率，从而执行所有数据采集和分析功能。独立处理器处理所有通信功能。最佳性能来源于使用CPLD内部存储器，实现处理器与模拟硬件之间的异步缓冲。6300系列对两个输入端执行同步分析，可靠地收集所有数据。它是真正的多功能仪器，通过坚固的便携式工具箱（仅重12磅），帮助您实现各种应用。工程师和科学家们现在可通过价格合理的紧凑系统——Venable 6300系列，获取用于生产、研发实验室、学术或现场操作的速度和技术。
+除了测试系统的频率响应外，6300系列频率响应分析仪的控制软件还包括了控制线路辅助设计和频域运算功能。针对电源供应器的控制补偿，提供了常用的三种线路，使用者可依照其电源供应器的控制方式，选择适合的线路种类。先量测系统原来的频率响应后，设定预计的设计目标：相位边限(PhaseMargin)及交越频率(CrossFrequency)等，软件即可自动运算出控制线路中最适合的电阻及电容值。使用者再加以实际验证即可。这个功能更可帮设计者节省大量时间，还能达到优化的设计结果。
+6300系列还具有很好的可升级性。例如Venable6305的频率范围10uHz-5MHz, 可以升级至20/40MHz，采集通道可以从2通道升级至3/4通道或者增加一个数字通道，保护用户的投资。
+Venable成为稳定性分析的开拓者已有30多年，将继续为测试和测量客户提供最先进的仪器和分析软件。
+电源环路测试示意图
+电源环路波特图
+电源在线输入/输出阻抗测试示意图
+阻抗图
+电源PSRR测试示意图
+PSRR曲线
+主要技术指标：
+信号源
+频率范围：
+正弦波10μHz至5MHz（6305）
+正弦波10μHz至20MHz（6320）
+正弦波10μHz至40MHz（6340）
+矩形波10uHz至1MHz（矩形波）
+AC振幅
+1mV至10V
+直流偏压
+±10V，10mV步进
+模式:
+单频，正弦扫描和线性扫描
+对数扫描
+0.1–2000步，十进制步进，10uHz–40MHz每步
+输出振幅补偿：
+动态调整输出，通过Venable软件控制，保持对电路的恒定电平输入
+输出阻抗：
+可切换50欧姆/2欧姆
+输出配置：
+单端浮地
+机箱接地隔离：
+600V
+分析
+测量频率范围：
+10μHz至5MHz (6305)
+10μHz至20MHz (6320)
+10μHz至40MHz (6340)
+输入方式：
+单端浮地输入
+可选输入阻抗：
+50欧姆或1兆欧（默认）
+测量精度：
+± 0.03dB + 0.1dB/MHz；
+± 0.4deg + 1deg/MHz
+测量技术：
+窄带DFT
+延迟时间：
+0-100秒
+积分时间：
+20msec至100ksec
+积分周期：
+1-9999周期
+输入耦合：</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 8, 2021</span>
+<a href=/posts/bode/more/post2/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/thermometer/post2/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/thermometer/post2/images/hero.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>深度解析红外发射率！</h5>
+<p class="card-text post-summary">热量和红外发射 热能是能量的一种形式。热量储存在物体中（我们周围的一切事物），就像电能储存在电池内一样。
+一个物体如果不带有热量将会是非常冷的，我们称其为绝对零度（-460℉或-273℃），这是最冷的物体。因为它的热量绝对值是零。当物体被加热时，温度会上升。一个物体的热量越多，将会变得越热。
+热量是通过分子和原子（次原子的微粒）的运动储存在物体内的。当物体处于绝对零度时，没有热量，分子和原子也不运动。一旦热量增加，温度开始上升，原子和分子（亚原子的微粒）开始振动（并改变能量的状态）。由于储存在物体内的热量总量的增加，分子和原子的振动将越来越剧烈。 就像两手拍打或橡胶带振动时产生声音一样，红外能量通过这些原子和分子的振动，通过它们相互之间的碰撞释放出来。这些释放出的能量就是红外测温仪所测量的红外能量。温度越高，原子和分子的振动越剧烈，释放的红外能量越多。这里关于温度和释放的红外能两者之间密切的线性关系，就是红外测温仪能够准确测温的工作原理。
+黑体能量分布和波长、温度之间的关系 通常一个物体释放出的红外能总量与其温度呈正比关系。一个相对小的温度变化通常能够带来一个相对较大的红外能量的变化。因此，红外测温仪具有较高的精度。但现实中存在很多影响红外测温仪准确工作的因素。因此，了解红外测温仪的本质和原理是至关重要的。
+如前所述，红外能量是由原子和分子的振动产生的。当物体温度较低的时候，这些振动相对较慢，释放的红外能也相对较小。当物体温度升高时，振动的频率增加并且释放出的红外能总量也随之增加。振动的频率与产生的能量的波长有关系。频率越高，波长越短。通常对于大多数材料来说，红外能量发出的波的频率和波长不是固定的，而是呈曲线分布，在一个范围内波动。在任何特定波长上，发出的红外能都随温度的增加而增加（见下图）。但是，低温物体发射出的峰值波长较长，而高温物体发射出的峰值波长较短。
+在分析光谱上不同温度产生的红外能分布时，需要注意两点。第一点是要注意在短波长下任何特定的温度变化所带来的红外能量的变化比在长波长下大得多。这就是说一个短波长红外测温仪更能准确地提供温度变化的趋势，并且更能耐受诸如发射率变化、光学结垢和瞄准误差等一系列干扰。第二点是要注意当温度变得越来越低时发射出的峰值能量的波长将增加。这就是说在测量温度很低的目标时，有必要使用一个波长相对较长的传感器。在下文中将仔细地给予说明。 发射率的定义 物体的温度与发射出的红外能的关系，粗略看来似乎用一句话就可以描述清楚：高温物体发射出较多的红外能，而低温物体发射出较少的红外能。理论上，通过简单地测定被测目标发射出的红外能，就可以知道它的温度。然而实际上并不是那么简单的。因为目标物体发射出的红外能并不是仅由温度这一个因素来决定的。还有另一个变量必须考虑，这个变量我们称之为发射率（或发射的趋势）。一个物体的发射率受到材料本身、表面状态、反射率和不透明度的影响。发射率常常会使测温变得复杂。因此，理解发射率的概念及其特性，对于正确使用红外测温仪是至关重要的。
+发射率和黑体的科学定义 发射率的科学定义是在某一特定温度下物体发射出的红外能与理论上在没有损失时的完全值的比例。换句话讲，发射率就是一个物体实际发射的红外能与其理论值的比率。这一值介于0.000和1.000之间。发射率如果能够达到理论上没有损失的完全值，则称之为黑体。黑体是一个完美的发射器，因为它理论上发射100%红外能，所以它的发射率值为1.000。一个物体如果发射出60%的理论上的红外能值，则称其发射率值为0.600。 几百年以来，对于黑体在各种温度和波长下所发射出的红外能已有详尽的记录，并已成为物理学的一种基础。红外测温仪在校对时是以黑体发射器为基准的。红外测温仪在使用时必须能够准确说明测量条件的特征。对非常接近黑体的对象，红外测温仪的结果通常更为准确。如果应用对象远离黑体条件，并且存在特定的安装问题，则需要慎重地对红外测温仪进行选型。而正确选型的前提是对红外测温仪本质原理的准确把握。
+实际发射率的定义 虽然发射率的科学定义是很重要的，但是通常在实际操作中是无法应用的。我们需要了解实际发射率的定义以及一些基本概念。
+在通常情况下，红外能表现为三种形式，即发射、穿透和吸收。
+反射率+ 穿透率+ 吸收率= 100%
+如果目标是不透明的，则其穿透率为0。以上公式变为：
+反射率 + 吸收率 = 100%
+如果目标吸收红外能（热能），它的温度会上升。当物体处于等温状态时，它发射出的能量和吸收的能量是相同的。因此，吸收率 = 发射率。以上公式变为：
+发射率 + 反射率 = 100%
+还可以表述为：
+发射率 = 100% - 反射率
+因此，对于一个不透明的物体，发射率是反射率的倒数，即发射率 + 反射率 = 100%。而对于一个透明的物体，其发射率 + 反射率 + 穿透率 = 100%。 换句话说，对于一个不透明的物体，发射率和反射率的和为100%。如果一个不透明的物体反射10%的能量，则发射90%的能量，其发射率值为0.900；如果一个不透明的物体反射60%的能量，则发射40%的能量，其发射率值为0.400。这一关于发射率的定义为理解发射率和理解红外测温仪提供了一个理论工具，因为反射率通常是容易测量和理解的。
+在理解发射率时有一个难点，即大多数材料的发射率值是不固定的。被测材料本身是表面发射率的最重要因素，然而并不是唯一因素。其它一些因素，诸如表面纹理、氧化度、微观结构、表面污染物以及镀层等等因素都会影响材料的发射率。比如，钢水的发射率和固体钢的发射率就有很大差别；又比如，热轧钢的发射率和冷轧钢的发射率也不一样。这里还有另一个难点是关于材料的颜色。有些金属迭片可以表现为任何颜色，但其发射率值是固定的，并不受到颜色变化的影响，但它的表现结构在很大程度上影响发射率值。通常高光泽度表面的材料比低光泽度表面的材料发射率低。迄今为止，有许多关于各种材料发射率值的记录。不幸的是，这些记录大部分是不准确的，也存在许多误解。
+黑体材料 假设有一种物体，在某一给定的温度下能够全部吸收投射到其表面的任何波长的辐射能量，则称之为黑体。黑体材料是一个完美的发射器，它的发射率值为1.000或100%。也就是说，一个完美的黑体材料是完全无反射的。在各种材料中，反射率越低，发射率越高，这种材料就越接近黑体材料。因此，反射率相当低的材料，诸如纸、纺织品、水泥和砖能够使用一个简单的、一般的红外测温仪来精确地测量其发射率，因为他们非常接近于黑体材料。然而也有很多材料与黑体材料大不相同，它们具有很高的反射率和穿透率。这些与黑体材料大不相同的材料，根据其发射率特点，大体上可以分为三种类型，即灰体材料、非灰体材料，以及可选择型发射体。
+灰体材料 灰体材料的发射率值低于1.000，并且其发射率值在任何波长下都是相同的。灰体材料通常具有固定的发射率值，仅仅在其表面粗糙度改变的情况下，这一值才可能被改变，其它情况下则是一个常数。一个灰体材料在某一给定温度下发射出的红外能如果是黑体材料的70%，则其发射率值为0.700。通常来说，不透明的物体具有一个相对高的发射率值（通常反射率在0.300-0.400之间，发射率在0.600-0.700之间），这种物体通常称为灰体材料。 非灰体材料 非灰体材料在不同的波长下具有不同的发射率值。对于不透明的材料来说，发射率随波长变化的趋势，主要是由材料的微观表面结构和物理属性所决定的。而对非灰体材料来说，对于红外能的吸收、反射和穿透的趋势取决于波长。可选择型发射体是一个特殊的非灰体材料，将在下一章节另作谈论。
+材料的表面纹理和氧化度也会影响表面发射率。尽管我们认为反射率高的材料是很光滑的，但在显微镜下，其表面还是有很多褶皱和裂缝。这些褶皱和裂缝很小，通常红外波无法进入，所以材料在此波长下具有较高的反射率。然而，如果波长足够小并可以进入这些褶皱和裂缝，则会有所损失，物体的反射率就会变低，材料在反射率较低时发射率较高，在反射率较高时发射率较低。因为比起长波，短波更容易渗入褶皱和裂缝，因此在用短波测量时，被测目标的发射率比用长波测量时更高。通常发射率值低于0.400-0.500的金属，我们称为非灰体。
+另外，表面纹理和氧化度的变化同样会引起基于波长的发射率变化。如果氧化结构的表面缝隙大于红外波长，比如氧化铁表面就显得很粗糙，其发射率相对较高，并且用小于此结构缝隙的所有波长进行测量时，发射率和反射率都是不变的。相反地，如果氧化结构的缝隙很小，比如氧化铬镀层，此时短波可以渗透，而长波则不行。随着氧化层变厚，渐渐能够吸收所有的波长，则其发射率值在各种波长下都是不变的。比如薄的胶片表面具有非常细致的氧化层，很容易把它看成是透明的，因此这些镀层在影响其表面纹理的同时，也可将其看成是可选择型发射体。</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 8, 2021</span>
+<a href=/posts/thermometer/post2/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/thermometer/post1/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/thermometer/post1/images/hero.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>红外测温原理</h5>
+<p class="card-text post-summary">自然界中的物体只要其温度高于绝对零度，就会不断地向外辐射能量。因此，理论上只要找到这些物体辐射能量与温度的对应关系并收集起来，经过一定的处理后，就可以得到与目标辐射分布相对应的热图像。
+一般将物体辐射出的波长在0.76μm-1000μm的电磁波定义为红外光波。将红外光按照波长分为四个波段：近红外(0.75μm～3.0μm)；中红外(3.0μm～6.0μm)；长波红外（6.0μm～15μm)和极远红外波段(15μm～1000μm)。研究发现，红外辐射对大气的穿透性和波长有很大关系，只有几个特定波段的红外辐射能够较好的穿透大气，研究人员将这几个特定的波段称为“大气窗口”，主要的大气窗口包括2μm -2.6μm，3μm～6μm和8μm～14μm。
+图为普朗克曲线
+红外热成像技术就是在利用红外辐射的“大气窗口”的波段进行成像。目前在红外成像领域研究较多的是采用中波红外（3μm～5μm）和长波红外（8μm～14μm）两个波段进行探测，将这些波段的辐射转换为人眼可观测并可供测量分析的图像数据。
+红外光波具有很强的温度效应，携带辐射目标的温度信息，这是利用红外成像进行温度场测量研究的基础。基于红外热成像的温度场测量技术是在红外辐射的基本定律基础上进行研究的，红外辐射的基本定律主要有四个：普朗克公式、维恩位移定律、朗伯余弦定律和斯蒂芬·波尔兹曼定律。
+当具备理论条件后，首先就由红外探测器和光学系统对目标物体实施红外扫描；然后将红外辐射信息聚集到探测器上，将其转化成电信号，并进行一系列放大处理；最后将这些信息传输到显示器上，就可以显示目标物体的温度分布情况了。红外热像仪不仅拥有温度测量的功能，而且拥有绘制测量对象温度分布的功能，可以将灰度图像转化成伪彩色图像。
+正常情况下，红外热像仪的扫描方式可以分为两种：一种是光机扫描，该扫描形式需要用到单元多元光伏或者广电导红外探测器。由于单元探测器会受到帧幅反应速度的制约，系统反应时间较长。通常会利用多元阵列探测器，将温度分布情况快速准确地显示出来。第二种是非扫描形式，这是新型的红外热像设备，与传统的光机扫描形式相比，阵列式凝视成像的焦平面热像仪的优点更加突出，逐渐挤压了光机扫描仪的市场空间。探测器是焦平面热像仪的核心部件，可以使目标物体的温度图像布满整个显示器，该扫描技术的便携性非常好，图像的清晰度更高，而且具有放大、自动聚焦、等温显示、语音注释的扩展功能，还可以根据自己的需求扩大存储空间。
+红外热像仪可以在不接触测量物体的情况下准确测量出目标物体的温度，并将其温度分布情况在显示器中显示出来。红外热像仪可以对测量到的温度进行精确化分析，对出现异常发热情况的设备故障进行检测分析。如今半导体技术、红外光学材料、微电子学等新型技术都应用到红外热像仪当中，极大地推动了该技术的发展，出现了能够显示二维可视图像的红外热像仪设备。</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 8, 2021</span>
+<a href=/posts/thermometer/post1/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/bode/more/post1/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/bode/more/post1/images/forest.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>频率响应分析仪Bode 100—测试电源系统环路响应的利器 </h5>
+<p class="card-text post-summary">频率响应分析仪Bode 100 是执行从1 Hz到50 MHz的准确度，快速频率扫描测量的专业解决方案，这对于电源设计和稳定的环路操作至关重要。
+BODE100环路分析仪的主要功能是量测待测物在频域上的特性，了解其性能及稳定性，并可辅助控制线路的设计。因为设计时没有正确评估系统的稳定性。但这种特性无法直接由电流拉载的时域测试来得到，必须经由Bode100频率响应分析仪的使用，才能得到系统的频率响应图，来判读出稳定度的特性。而这种频率响应的测试，不仅速度快，节省大量测试时间。
+而Bode 100 不仅仅是频率响应分析仪，它也可作为：
+矢量网分分析仪
+阻抗分析仪
+增益相位分析仪
+正弦波发生器
+产品特点：
+稳定性分析
+分析电路控制系统生成伯德图和奈奎斯特图
+复阻抗
+分析被动电子元件和有源电子电路
+频率响应
+电子系统的复杂传递函数（增益/相位）
+谐振频率
+高Q值谐振峰值，ESR测量，RFID
+传输/反射系数
+表征电缆，滤波器，放大器，S参数测量
+自动化测量
+通过USB接口很方便集成到自动化系统
+Bode软件分析
+近期，安泰测试为西安某高校提供了BODE100现场演示，并获得客户高度认可，这对电源测试的客户来说，无疑是测试电源系统的环路响应的“利器”，如需了解环路分析仪BODE100更多产品应用，欢迎关注安泰测试网。</p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 8, 2021</span>
+<a href=/posts/bode/more/post1/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class=paginator>
+</div>
+</div>
+</section>
+</div>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+<div class="container pt-5">
+<div class="row text-left">
+<div class="col-md-4 col-sm-12">
+<h5>导航</h5>
+<ul>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#about>About</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#skills>专业特长</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#projects>成功案例</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=https://colourfulleaves.github.io/#recent-posts>最新文章</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<h5>联系方式:</h5>
+<ul>
+<li><a href=mailto:sam6525@163.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>sam6525@163.com</span>
+</a></li>
+<li><a href=https://github.com/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-github"></i></span> <span>colourfulleaves</span>
+</a></li>
+<li><a href=https://www.linkedin.com/in/colourfulleaves target=_blank rel=noopener>
+<span><i class="fab fa-linkedin"></i></span> <span>七色叶工作室</span>
+</a></li>
+<li><span><i class="fas fa-phone-alt"></i></span> <span>+8618521516525</span></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<p>通过电子邮件接收最新信息</p>
+<form method=post action=https://blogtrottr.com>
+<div class=form-group>
+<input type=email class=form-control name=btr_email placeholder="填入 E-mail"><br>
+<input type=hidden name=btr_url value=https://colourfulleaves.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">输入您的电子邮件地址，即表示您同意接收本网站的时事通讯</small>
+<button type=submit class="btn btn-info"> 提交 </button>
+</form>
+</div>
+</div>
+</div>
+<hr>
+<div class=container>
+<div class="row text-left">
+<div class=col-md-4>
+<a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener>
+<img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
+Toha
+</a>
+</div>
+<div class="col-md-4 text-center">© 2020 Copyright.</div>
+<div class="col-md-4 text-right">
+<a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
+<script type=text/javascript src=/js/popper.min.js></script>
+<script type=text/javascript src=/js/bootstrap.min.js></script>
+<script type=text/javascript src=/js/navbar.js></script>
+<script type=text/javascript src=/js/plyr.js></script>
+<script type=text/javascript src=/js/main.js></script>
+<script src=/js/list.js></script>
+</body>
+</html>
