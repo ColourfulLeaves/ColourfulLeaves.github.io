@@ -12,7 +12,7 @@ hero: images/forest.jpg
 tags: ["Markdown","Content Organization","Multi-lingual"]
 categories: ["Basic"]
 ---
-{{< img src="/posts/bode/post2/images/1.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/1.jpg" align="center" title="">}}
 Venable6300系列频率响应分析仪结合了最新的模拟和数字技术，以及先进的数字信号处理技术（DSP），以提供多样化测试与分析功能。这一综合性软硬件系统具有非常精密的测试功能，具有10μHz至40MHz的频宽和2个输入端，并受到保护，峰值电压不超过600V。Venable6305可以很好的替换Venable3120, Venable6320可以替换Venable3215。
 
 Venable著名的基于K系数的软件，现已称为Stability Analysis™ v5.1。该6300系列仪器是您目前用于测量相位/增益和阻抗的最完整、精确且易用的系统。Venable通过行业标准IEEE-488接口或者USB接口运行，可导入/导出至MATLABTM和Excel™，并以.jpeg文件格式保存波德/阻抗图。导出的图片可用于图片展示软件或保存为.wen格式的文件，进行离线数据处理。
@@ -25,22 +25,22 @@ Venable仪器包含了最新的CPLD技术，用以释放专用处理器的功率
 
 Venable成为稳定性分析的开拓者已有30多年，将继续为测试和测量客户提供最先进的仪器和分析软件。
 
-{{< img src="/posts/bode/post2/images/2.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/2.jpg" align="center" title="">}}
 电源环路测试示意图
 
-{{< img src="/posts/bode/post2/images/3.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/3.jpg" align="center" title="">}}
 电源环路波特图
 
-{{< img src="/posts/bode/post2/images/4.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/4.jpg" align="center" title="">}}
 电源在线输入/输出阻抗测试示意图
 
-{{< img src="/posts/bode/post2/images/5.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/5.jpg" align="center" title="">}}
 阻抗图
 
-{{< img src="/posts/bode/post2/images/6.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/6.jpg" align="center" title="">}}
 电源PSRR测试示意图
 
-{{< img src="/posts/bode/post2/images/7.jpg" align="center" title="">}}
+{{< img src="/posts/bode/more/post2/images/7.jpg" align="center" title="">}}
 PSRR曲线
 
 主要技术指标： 

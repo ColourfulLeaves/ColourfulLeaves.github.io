@@ -17,7 +17,7 @@ categories: ["Basic"]
 
 BODE100环路分析仪的主要功能是量测待测物在频域上的特性，了解其性能及稳定性，并可辅助控制线路的设计。因为设计时没有正确评估系统的稳定性。但这种特性无法直接由电流拉载的时域测试来得到，必须经由Bode100频率响应分析仪的使用，才能得到系统的频率响应图，来判读出稳定度的特性。而这种频率响应的测试，不仅速度快，节省大量测试时间。
 
-{{< img src="/posts/bode/post1/images/1.png" align="center" title="">}}
+{{< img src="/posts/bode/more/post1/images/1.png" align="center" title="">}}
 
 而Bode 100 不仅仅是频率响应分析仪，它也可作为：
 
@@ -29,9 +29,9 @@ BODE100环路分析仪的主要功能是量测待测物在频域上的特性，�
 
 正弦波发生器
 
-{{< img src="/posts/bode/post1/images/2.png" align="center" title="">}}
+{{< img src="/posts/bode/more/post1/images/2.png" align="center" title="">}}
 
-{{< img src="/posts/bode/post1/images/3.png" align="center" title="">}}
+{{< img src="/posts/bode/more/post1/images/3.png" align="center" title="">}}
 
 
 产品特点：
