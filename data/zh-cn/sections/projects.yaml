@@ -25,9 +25,10 @@ projects:
   logo: /images/sections/projects/kubernetes.png
   # role: Contributor
   # timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: 精度高达0.05°C，宽温域红外测温模块的软硬件开发；用于模块校准的生产软硬件开发。
+  # repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: "/posts/thermometer/elim/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: 
+    自主设计的红外测温算法，提供更高的测温精度，更宽的测温范围；采用业内头部的SOC芯片，产品具有相当的成本优势；采用STM32 MCU和python实现了整个校准流程，具有动态生产优势；提供基于STM32和8051上的例程，便于用户学习导入。
   tags: ["红外测温", "python"]
 
 - name: 低频系响应分析仪
@@ -35,7 +36,7 @@ projects:
   # role: Developer
   # timeline: "Jun 2018 - Present"
   # repo: https://github.com/tensorflow/tensorflow
-  #url: ""
+  url: "/posts/bode/magicbox/"
   summary: 
     "系统响应分析仪又称频率响应分析仪或波特仪。通过这类仪器，可以测得硬件系统的频率响应曲线，也就得知硬件系统的稳定性。在本项目中，我们针对被测系统中存在的高干扰，采用STM32单片机和Python开发了一款虚拟仪器。该仪器与常见的分析仪（例如bode100）比，具有更高的零敏度和准确度。"
   tags: ["STM32", "python"]
