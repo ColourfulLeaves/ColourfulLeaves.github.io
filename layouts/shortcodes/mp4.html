@@ -1,0 +1,9 @@
+<video controls="controls" autoplay="autoplay">
+  <source src="{{ .Get "src"}}"
+  {{ if .Get "type"}}
+      type="{{.Get "type"}}"
+  {{ else}}
+      type="video/mp4" 
+  {{end}}
+  />
+</video>

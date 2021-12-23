@@ -13,6 +13,8 @@ tags: ["Markdown","Content Organization","Multi-lingual"]
 categories: ["Basic"]
 ---
 
+{{< mp4 src="/files/KIYB6082_x264_003.mp4" >}}
+
 ### 产品特点
 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
 
