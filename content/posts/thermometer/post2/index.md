@@ -7,7 +7,7 @@ menu:
     name: 深度解析红外发射率！
     identifier: post20
     parent: thermometer
-    weight: 20
+    weight: 30
 hero: images/hero.jpg
 tags: ["Markdown","Content Organization","Multi-lingual"]
 categories: ["Basic"]
