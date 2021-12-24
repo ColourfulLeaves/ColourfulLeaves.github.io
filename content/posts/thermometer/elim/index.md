@@ -80,3 +80,5 @@ categories: ["Basic"]
 - [ElimDesktop](https://github.com/ColourfulLeaves/ElimDesktop)
 
 - [Elim高精度红外测温模块说明](/files/Elim高精度红外测温模块说明.docx)
+
+- [Elim DemoBoard](https://github.com/ColourfulLeaves/ElimDemoBoard)
