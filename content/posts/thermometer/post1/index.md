@@ -7,7 +7,7 @@ menu:
     name: 红外测温原理
     identifier: post10
     parent: thermometer
-    weight: 20
+    weight: 50
 hero: images/hero.jpg
 tags: ["Markdown","Content Organization","Multi-lingual"]
 categories: ["Basic"]
