@@ -87,31 +87,6 @@ Colourful Leaves Studio</a>
 <div class="content container-fluid" id=content>
 <div class="container-fluid post-card-holder" id=post-card-holder>
 <div class=post-card>
-<a href=/posts/thermometer/cali/ class=post-card-link>
-<div class=card>
-<div class=card-head>
-<img class=card-img-top src=/posts/thermometer/cali/images/hero.jpg alt="Hero Image">
-</div>
-<div class=card-body>
-<h5 class=card-title>红外测温之校准</h5>
-<p class="card-text post-summary">Elim红外测温模块的校准系统如上图所示。整个系统可分为软件部分和硬件部分。软件部分是由CaliServer和CaliWare两套软件组成。硬件部分则由恒温箱、红外辐射源、校准辅助板和计算机组成。
-在整个校准系统中，软件部分是最重要的。它负责控制校准环境，记录校准数据，计算校准参数，读写校准参数等。这套软件采用CS结构进行设计。CaliServer作为服务端，提供数据的存储等服务。CaliWare作为客户端，实现对校准系统的控制，对被校准模块的读写，校准参数的计算等功能。
-CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
-校准过程中的数据的记录 维护产品数据库 操作人员权限管理维护 校准过程的管理和维护 权限管理页面
-用户管理页面
-校准点管理页面
-校准数据管理页面 CaliWare CaliWare是基于Python+Qt5编写的桌面软件。它的主要功能有：
-控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准辅助板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 从CaliServer下载模块对应的全部原始值，并计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆
-校准过程 </p>
-</div>
-<div class=card-footer>
-<span class=float-left>December 21, 2021</span>
-<a href=/posts/thermometer/cali/ class="float-right btn btn-outline-info btn-sm">阅读</a>
-</div>
-</div>
-</a>
-</div>
-<div class=post-card>
 <a href=/posts/thermometer/elim/ class=post-card-link>
 <div class=card>
 <div class=card-head>
@@ -149,6 +124,31 @@ Elim DemoBoard
 <div class=card-footer>
 <span class=float-left>December 19, 2021</span>
 <a href=/posts/thermometer/elim/ class="float-right btn btn-outline-info btn-sm">阅读</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/thermometer/cali/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/thermometer/cali/images/hero.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>红外测温之校准</h5>
+<p class="card-text post-summary">Elim红外测温模块的校准系统如上图所示。整个系统可分为软件部分和硬件部分。软件部分是由CaliServer和CaliWare两套软件组成。硬件部分则由恒温箱、红外辐射源、校准辅助板和计算机组成。
+在整个校准系统中，软件部分是最重要的。它负责控制校准环境，记录校准数据，计算校准参数，读写校准参数等。这套软件采用CS结构进行设计。CaliServer作为服务端，提供数据的存储等服务。CaliWare作为客户端，实现对校准系统的控制，对被校准模块的读写，校准参数的计算等功能。
+CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
+校准过程中的数据的记录 维护产品数据库 操作人员权限管理维护 校准过程的管理和维护 权限管理页面
+用户管理页面
+校准点管理页面
+校准数据管理页面 CaliWare CaliWare是基于Python+Qt5编写的桌面软件。它的主要功能有：
+控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准辅助板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 从CaliServer下载模块对应的全部原始值，并计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆
+校准过程 </p>
+</div>
+<div class=card-footer>
+<span class=float-left>December 15, 2021</span>
+<a href=/posts/thermometer/cali/ class="float-right btn btn-outline-info btn-sm">阅读</a>
 </div>
 </div>
 </a>
