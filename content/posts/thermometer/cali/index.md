@@ -1,6 +1,6 @@
 ---
 title: "红外测温之校准"
-date: 2021-12-21T08:06:25+06:00
+date: 2021-12-15T08:06:25+06:00
 description: Sample post with multiple images, embedded video ect.
 menu:
   sidebar:
