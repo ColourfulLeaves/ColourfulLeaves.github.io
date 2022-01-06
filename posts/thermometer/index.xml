@@ -22,14 +22,20 @@
 红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
 相关链接 ElimDesktop
 Elim高精度红外测温模块说明
-Elim DemoBoard</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>Elim红外测温模块的校准系统如上图所示。整个系统可分为软件部分和硬件部分。软件部分是由CaliServer和CaliWare两套软件组成。硬件部分则由恒温箱、红外辐射源、校准辅助板和计算机组成。
-在整个校准系统中，软件部分是最重要的。它负责控制校准环境，记录校准数据，计算校准参数，读写校准参数等。这套软件采用CS结构进行设计。CaliServer作为服务端，提供数据的存储等服务。CaliWare作为客户端，实现对校准系统的控制，对被校准模块的读写，校准参数的计算等功能。
+Elim DemoBoard</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。整个系统采用CS结构进行设计。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。
+CaliWare和及其配属的硬件是作为整个系统的Client端，它对应的是校准过程中的每一个校准站，即校准点。它的主要功能是控制校准点的环境，记录校准数据，计算校准参数和读写模块。
+这种CS结构设计的优点是：
+采用了权限管理，只有具有授权的人才可以访问校准数据，设置校准流程和校准点数据，确保数据的安全。 校准流程和校准点数据可设置，整个系统可适配多种型号的校准。 支持更灵活的校准产线，可以根据生产情况，随时调整工作流水线的设定，具有更大的柔性。 易用的CaliWare，更适合产线操作员。 相关设置 工作站 工作站又称机位。它是用来设置当前Client端在整个校准序列中的位置。它的设置项为系统默认，分为：“初站”，“间站”和“终站”。
+CaliWare在工作时，如果它的设置为“初站”，它会首先向CaliServer申请一新的ID，并将这一ID写入到模块中。它也会完成对模块的其他必要的初始化的工作。随后，它会完成同“间站”设置相同的功能。
+如果CaliWare的设置为“间站”，它仅仅完成模块对该校准点的测量，并将测量结果保存到CaliServer中。
+如果CaliWare的设置为“终站”，在完成上面“间站”设置相同的功能后，它会从CaliServer上下载全部的测量数据，计算校准参数，把校准参数写入到模块中。
+校准点 校准点即在校准过程中选取的标准点。为了能够更高的精度，这些校准点应该均匀分布在产品的测量范围。所以，不同的型号会对应不同的校准点设置。
 CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
 校准过程中的数据的记录 维护产品数据库 操作人员权限管理维护 校准过程的管理和维护 权限管理页面
 用户管理页面
 校准点管理页面
 校准数据管理页面 CaliWare CaliWare是基于Python+Qt5编写的桌面软件。它的主要功能有：
-控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准辅助板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 从CaliServer下载模块对应的全部原始值，并计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆
+控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准通讯板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆
 校准过程</description></item><item><title>深度解析红外发射率！</title><link>https://colourfulleaves.github.io/posts/thermometer/post2/</link><pubDate>Wed, 08 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/post2/</guid><description>热量和红外发射 热能是能量的一种形式。热量储存在物体中（我们周围的一切事物），就像电能储存在电池内一样。
 一个物体如果不带有热量将会是非常冷的，我们称其为绝对零度（-460℉或-273℃），这是最冷的物体。因为它的热量绝对值是零。当物体被加热时，温度会上升。一个物体的热量越多，将会变得越热。
 热量是通过分子和原子（次原子的微粒）的运动储存在物体内的。当物体处于绝对零度时，没有热量，分子和原子也不运动。一旦热量增加，温度开始上升，原子和分子（亚原子的微粒）开始振动（并改变能量的状态）。由于储存在物体内的热量总量的增加，分子和原子的振动将越来越剧烈。 就像两手拍打或橡胶带振动时产生声音一样，红外能量通过这些原子和分子的振动，通过它们相互之间的碰撞释放出来。这些释放出的能量就是红外测温仪所测量的红外能量。温度越高，原子和分子的振动越剧烈，释放的红外能量越多。这里关于温度和释放的红外能两者之间密切的线性关系，就是红外测温仪能够准确测温的工作原理。
