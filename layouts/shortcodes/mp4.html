@@ -1,4 +1,11 @@
-<video controls="controls" autoplay="autoplay">
+<video controls="controls" 
+    {{ if .Get "width"}}
+      width="{{.Get "width"}}"
+    {{end}}    
+    {{ if .Get "height"}}
+      height="{{.Get "height"}}"
+    {{end}}    
+autoplay="autoplay">
   <source src="{{ .Get "src"}}"
   {{ if .Get "type"}}
       type="{{.Get "type"}}"
