@@ -51,7 +51,7 @@ CaliServer是基于python Flask框架编写的一Web App。它的主要作用是
 
 工作站管理页面
 
-工作站在CaliWare中被成为“机位”。
+工作站在CaliWare中被称为“机位”。此项设置对所有型号通用。
 {{< img src="/posts/thermometer/cali/images/8.PNG" align="center" title="工作站管理">}}
 {{<vs 3>}}
 
