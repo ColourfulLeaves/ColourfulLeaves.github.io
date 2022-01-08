@@ -22,21 +22,24 @@
 红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
 相关链接 ElimDesktop
 Elim高精度红外测温模块说明
-Elim DemoBoard</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。整个系统采用CS结构进行设计。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。
-CaliWare和及其配属的硬件是作为整个系统的Client端，它对应的是校准过程中的每一个校准站，即校准点。它的主要功能是控制校准点的环境，记录校准数据，计算校准参数和读写模块。
+Elim DemoBoard</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。这是一个CS结构的系统。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。Cali Serverd可以同时为多个CaliWare提供服务。
+CaliWare和及其配属的硬件是作为整个系统的Client端，它用来实现在校准过程中对每个校准点的校准操作。它的主要功能是控制校准点的环境，记录校准数据，计算校准参数和读写模块，与CaliServer互动（上传校准数据和结果，权限管理和更新校准配置信息）。
 这种CS结构设计的优点是：
-采用了权限管理，只有具有授权的人才可以访问校准数据，设置校准流程和校准点数据，确保数据的安全。 校准流程和校准点数据可设置，整个系统可适配多种型号的校准。 支持更灵活的校准产线，可以根据生产情况，随时调整工作流水线的设定，具有更大的柔性。 易用的CaliWare，更适合产线操作员。 相关设置 工作站 工作站又称机位。它是用来设置当前Client端在整个校准序列中的位置。它的设置项为系统默认，分为：“初站”，“间站”和“终站”。
-CaliWare在工作时，如果它的设置为“初站”，它会首先向CaliServer申请一新的ID，并将这一ID写入到模块中。它也会完成对模块的其他必要的初始化的工作。随后，它会完成同“间站”设置相同的功能。
-如果CaliWare的设置为“间站”，它仅仅完成模块对该校准点的测量，并将测量结果保存到CaliServer中。
-如果CaliWare的设置为“终站”，在完成上面“间站”设置相同的功能后，它会从CaliServer上下载全部的测量数据，计算校准参数，把校准参数写入到模块中。
-校准点 校准点即在校准过程中选取的标准点。为了能够更高的精度，这些校准点应该均匀分布在产品的测量范围。所以，不同的型号会对应不同的校准点设置。
-CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
-校准过程中的数据的记录 维护产品数据库 操作人员权限管理维护 校准过程的管理和维护 权限管理页面
+采用了权限管理，只有具有授权的人才可以访问校准数据，设置校准流程和校准点数据，确保数据的安全。 校准流程和校准点数据可设置，整个系统可适配多种型号的校准。 支持更灵活的校准产线，可以根据生产情况，随时调整工作流水线的设定，具有更大的生产柔性。 易用的CaliWare，更适合产线操作员。 CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
+校准过程中数据的记录 维护产品数据库 操作人员权限管理维护 校准过程的管理和维护 部分页面截图如下：
+权限管理页面
+在这个系统中，将用户分为两类，Admin和Public。 Admin是管理员，具有全部的系统操作权力。Public是为操作员准备的，具有此类权限的用户仅通过使用CaliWare与Cali Server进行交互，不能使用浏览器登陆系统或对系统进行查询等操作。
 用户管理页面
+工作站管理页面
+工作站在CaliWare中被成为“机位”。
 校准点管理页面
-校准数据管理页面 CaliWare CaliWare是基于Python+Qt5编写的桌面软件。它的主要功能有：
-控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准通讯板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆
-校准过程</description></item><item><title>深度解析红外发射率！</title><link>https://colourfulleaves.github.io/posts/thermometer/post2/</link><pubDate>Wed, 08 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/post2/</guid><description>热量和红外发射 热能是能量的一种形式。热量储存在物体中（我们周围的一切事物），就像电能储存在电池内一样。
+校准点即在校准过程中选取的标准点。为了能够更高的精度，这些校准点应该均匀分布在产品的测量范围。所以，不同的型号会对应不同的校准点设置。
+校准数据管理页面
+在这个页面，管理员可是实现对校准数据的增删改查等操作。 CaliWare CaliWare是基于Python+Qt5编写的桌面软件。它的主要功能有：
+控制恒温室温度，为校准过程提供稳定的环境 控制红外辐射源的温度，为校准过程提供准确的目标温度 通过校准通讯板读取模块采集到的原始值 保存采集到的原始值到CaliServer中 计算校准参数 更新模块中的校准参数 保存校准参数到CaliServer中 将工厂数据写入到模块中 登陆UI
+CaliWare此时会使用用户输入的账号密码登陆CaliServer，登陆成功后，获得CaliServer颁发的key，进入主UI。
+主UI
+操作员将模块准备好后，点击“开始校准”按钮开始对模块的校准。CaliWare在用户点击后，按照“机位”的设置，执行校准过程，并将执行的结果显示在提示框中。</description></item><item><title>深度解析红外发射率！</title><link>https://colourfulleaves.github.io/posts/thermometer/post2/</link><pubDate>Wed, 08 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/post2/</guid><description>热量和红外发射 热能是能量的一种形式。热量储存在物体中（我们周围的一切事物），就像电能储存在电池内一样。
 一个物体如果不带有热量将会是非常冷的，我们称其为绝对零度（-460℉或-273℃），这是最冷的物体。因为它的热量绝对值是零。当物体被加热时，温度会上升。一个物体的热量越多，将会变得越热。
 热量是通过分子和原子（次原子的微粒）的运动储存在物体内的。当物体处于绝对零度时，没有热量，分子和原子也不运动。一旦热量增加，温度开始上升，原子和分子（亚原子的微粒）开始振动（并改变能量的状态）。由于储存在物体内的热量总量的增加，分子和原子的振动将越来越剧烈。 就像两手拍打或橡胶带振动时产生声音一样，红外能量通过这些原子和分子的振动，通过它们相互之间的碰撞释放出来。这些释放出的能量就是红外测温仪所测量的红外能量。温度越高，原子和分子的振动越剧烈，释放的红外能量越多。这里关于温度和释放的红外能两者之间密切的线性关系，就是红外测温仪能够准确测温的工作原理。
 黑体能量分布和波长、温度之间的关系 通常一个物体释放出的红外能总量与其温度呈正比关系。一个相对小的温度变化通常能够带来一个相对较大的红外能量的变化。因此，红外测温仪具有较高的精度。但现实中存在很多影响红外测温仪准确工作的因素。因此，了解红外测温仪的本质和原理是至关重要的。
