@@ -7,6 +7,10 @@ text-indent: 2rem; /*em是相对单位，2em即现在一个字大小的两倍*/
 font-size: 1.25rem;
 }
 
+.post-content video{
+margin-left: 2rem;
+}
+
 .post-content ul{
 margin-left: 3rem;
 }
