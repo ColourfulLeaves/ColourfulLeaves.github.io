@@ -7,6 +7,14 @@ text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
 font-size: 1.25rem;
 }
 
+.post-content ul{
+margin-left: 3rem;
+}
+
+.post-content li{
+text-indent: 2em;
+}
+
 h5{
 font-size: 1.6rem;
 }
