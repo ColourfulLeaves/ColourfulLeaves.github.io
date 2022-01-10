@@ -13,6 +13,11 @@ tags: ["Markdown","Content Organization","Multi-lingual"]
 categories: ["Basic"]
 ---
 
+### 演示视频
+
+{{< mp4 src="/files/KIYB6082_x264_003.mp4" height=600 width=800 >}}
+
+
 ### 产品介绍
 
 根据方式可将测温分为接触式和非接触式。
@@ -51,13 +56,6 @@ categories: ["Basic"]
 
 工作温度：-20 ~ 85 °C
 
-
-### 演示视频
-
-{{< mp4 src="/files/KIYB6082_x264_003.mp4" height=600 width=800 >}}
-
-
-       
     
 
 ### 使用注意事项
