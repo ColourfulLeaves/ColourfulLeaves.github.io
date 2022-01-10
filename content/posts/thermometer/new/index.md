@@ -70,8 +70,8 @@ categories: ["Basic"]
 - 红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
 
 ### 相关链接
-- [ElimDesktop](https://github.com/ColourfulLeaves/ElimDesktop)
+- [ElimDesktop](https://github.com/ColourfulLeaves/ElimDesktop)，一款用于实时显示Elim模块测得的温度的桌面软件。
 
-- [Elim高精度红外测温模块说明](/files/Elim高精度红外测温模块说明.docx)
+- [Elim高精度红外测温模块说明](/files/Elim高精度红外测温模块说明.docx)， 模块说明书。
 
-- [Elim DemoBoard](https://github.com/ColourfulLeaves/ElimDemoBoard)
+- [Elim DemoBoard](https://github.com/ColourfulLeaves/ElimDemoBoard)，Demo板的软件。Demo板采用We Act的Stm32F411核心板作为中控核心板，通过I2C接口与Elim模块通讯，同时通过USB，将自己定义成串口设备与ElimDesktop通信。
