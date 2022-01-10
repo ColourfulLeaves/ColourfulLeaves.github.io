@@ -2,8 +2,8 @@
     background-image: url(../flags/4x3/cn.svg);
 }
 
-.post-content{
-text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+.post-content p{
+text-indent: 2rem; /*em是相对单位，2em即现在一个字大小的两倍*/
 font-size: 1.25rem;
 }
 
@@ -12,7 +12,7 @@ margin-left: 3rem;
 }
 
 .post-content li{
-text-indent: 2em;
+text-indent: 1rem;
 }
 
 h5{
