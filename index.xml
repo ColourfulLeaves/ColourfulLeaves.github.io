@@ -143,9 +143,9 @@ Elim DemoBoard</description></item><item><title>红外测温模块 New</title><l
 理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
 物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
 红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
-相关链接 ElimDesktop
-Elim高精度红外测温模块说明
-Elim DemoBoard</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。这是一个CS结构的系统。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。Cali Serverd可以同时为多个CaliWare提供服务。
+相关链接 ElimDesktop，一款用于实时显示Elim模块测得的温度的桌面软件。
+Elim高精度红外测温模块说明， 模块说明书。
+Elim DemoBoard，Demo板的软件。Demo板采用We Act的Stm32F411核心板作为中控核心板，通过I2C接口与Elim模块通讯，同时通过USB，将自己定义成串口设备与ElimDesktop通信。</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。这是一个CS结构的系统。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。Cali Serverd可以同时为多个CaliWare提供服务。
 CaliWare和及其配属的硬件是作为整个系统的Client端，它用来实现在校准过程中对每个校准点的校准操作。它的主要功能是控制校准点的环境，记录校准数据，计算校准参数和读写模块，与CaliServer互动（上传校准数据和结果，权限管理和更新校准配置信息）。
 这种CS结构设计的优点是：
 采用了权限管理，只有具有授权的人才可以访问校准数据，设置校准流程和校准点数据，确保数据的安全。 校准流程和校准点数据可设置，整个系统可适配多种型号的校准。 支持更灵活的校准产线，可以根据生产情况，随时调整工作流水线的设定，具有更大的生产柔性。 易用的CaliWare，更适合产线操作员。 CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
