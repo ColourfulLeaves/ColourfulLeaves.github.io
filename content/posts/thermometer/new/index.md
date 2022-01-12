@@ -119,4 +119,4 @@ categories: ["Basic"]
 
 - [《Elim高精度红外测温模块说明》](/files/Elim高精度红外测温模块说明.docx)， 模块说明书。
 
-- [Elim DemoBoard](https://github.com/ColourfulLeaves/ElimDemoBoard)，Demo板的固件。Demo板采用We Act的Stm32F411核心板作为中控核心板，通过I2C接口与Elim模块通讯，同时通过USB，将自己定义成串口设备与ElimDesktop通信。
+- [Elim DemoBoard](https://github.com/ColourfulLeaves/ElimDemoBoard)，Demo板的固件。Demo板采用We Act的Stm32F411核心板作为中控核心板，通过I2C接口与Elim模块通讯，同时通过USB，将自己定义成USB串口设备与ElimDesktop通信。
