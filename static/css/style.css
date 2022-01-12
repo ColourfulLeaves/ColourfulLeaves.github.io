@@ -15,6 +15,10 @@ margin-left: 2rem;
 margin-left: 3rem;
 }
 
+.post-content ol{
+margin-left: 3rem;
+}
+
 .post-content li{
 text-indent: 1rem;
 }
