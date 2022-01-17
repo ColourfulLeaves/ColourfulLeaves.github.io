@@ -1,28 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Content Organization on Colourful Leaves Studio</title><link>https://colourfulleaves.github.io/tags/content-organization/</link><description>Recent content in Content Organization on Colourful Leaves Studio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Dec 2021 08:06:25 +0600</lastBuildDate><atom:link href="https://colourfulleaves.github.io/tags/content-organization/index.xml" rel="self" type="application/rss+xml"/><item><title>红外测温模块</title><link>https://colourfulleaves.github.io/posts/thermometer/elim/</link><pubDate>Sun, 19 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/elim/</guid><description>产品特点 硬件优秀 此款红外测温模块在硬件上采用了高精度红外热电堆传感器和业内优秀的Soc芯片。它采用的传感器，具有高响应速度、高灵敏度和高稳定度的特点。它采用的Soc芯片，具有24位低噪声模数转换器和强大的数字信号处理单元。
-高精度、宽温域 红外测温的原理是测量红外辐射的强度，再根据强度与温度的关系计算出对应的温度。在强度到温度的计算中，由于强度与温度的关系不是线性的，所以大部分厂商在计算时都是采用将曲线折线化后，计算近似值的办法。这种办法的优点是计算简单。可是对应的缺点却是精度不够高，特别是在宽温域的时候。例如常见的福禄克红外测温仪，它大部分型号的误差都是在1°C或1%。
-我们在根据红外辐射强度计算温度时，不是采用上面的方式，而是采用我们自己开发的AI算法。采用AI算法的缺点是计算量偏大。但是它带来的优点非常明显，就是精度能够提高很多。此模块在0-100°C范围内，精度精度可以达到0.05℃的误差，已经超过了市场上绝大多数红外体温测量设备的标准。在100-600°C范围内，它的精度也能达到0.5°C的误差。
-在校准方法上，我们也有先进之处。常见的校准方式为两点式。它的工作原理是设备/模块在两个校准点读取数据，然后自行计算，并将计算出的结果保存。我们没有采用这种方式，而是根据红外温度测量的要点，全新设计了两轮四点式校准流程；同时，我们也开发了于此流程配套的校准软件。我们的校准软件能够利用PC出色的计算能力计算校准参数，保存校准参数到产品数据库，并将校准参数写入到模块中。我们这样做的优点有：
-使更复杂，更高维的校准公式成为可能。而此类公式的使用，能够带来更高的精度和准确读。 可以在校准软件中实现复杂的数学算法，减少校准过程中的噪声，提高校准的准确度。 模块校准参数备份在我们的数据库中，即使在使用过程中发生了参数意外丢失，仍有机会可以现场恢复参数。 可高度定制 与业内普遍采用MLX90614等集成芯片的方案不同，我们采用了独立设计，自行调教。我们可以针对您的使用场景对模块进行单独调教，使精度和分辨率充分满足您的需求。
-完美客户支持 由于掌握了红外温度测量的每个技术细节，我们能够为客户提供全面的技术支持，无论是软硬件调试还是应用场景。
-为便于客户迅速开发， 我们开源了与此模块配套的Demo板资料和其软件（请参见“相关链接”）。
-功能规格 尺寸：25x30.5x22.5（带不锈钢套），25x30.5x8（不带不锈钢套）
-电压：3.3V
-电流：&amp;lt;5mA(工作） &amp;lt;50nA(休眠）
-输出接口：IIC或uart
-被测温度范围：-0 ~ 600 °C
-工作温度：-20 ~ 85 °C
-演示视频 关于测温 测温方式可分为接触式和非接触式。
-接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这个测量过程需要达到热平衡后才可以进行，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题；
-非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需两者直接接触，所以后者具有响应速度快、测温范围广、稳定性好等特点。
-在非接触测温中，最常见的测温方式即为红外测温。它利用的原理是：任何在绝对温度之上的物体都在发射红外辐射，而且红外辐射的强度与温度相关。测温仪器通过测量被测物体的红外辐射强度即可计算出被测物体的温度。
-使用注意事项 在实际的红外测温应用中，由于红外测温技术特点，有几点需要注意的：
-由于此类传感器使基于光学的（红外光），测得的温度为视场内的平均温度。所以在使用时需要确保视场内只有被测物体。
-理论上所有的物体都会发射红外辐射，但是每类物体发射红外辐射的能力不一样。这种能力，被称为红外发射率。在试用红外测温之前，需要正确的设置红外发射率。
-物体除本身发射红外辐射外，也会反射周围的红外辐射，特别使光滑的物体，就如镜子一样。所以在使用时需要注意这个问题。这个问题最好的解决办法就是在光滑的物体之上覆盖一层低反射率的物体，例如电工胶带等。
-红外辐射在大气中的传播会有衰减。所以在测量距离比较远的时候，需要考虑衰减因素。
-相关链接 ElimDesktop
-Elim高精度红外测温模块说明
-Elim DemoBoard</description></item><item><title>红外测温模块 New</title><link>https://colourfulleaves.github.io/posts/thermometer/new/</link><pubDate>Sun, 19 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/new/</guid><description>演示视频 市场常见测温方式 温度测量根据传感器和被测物体关系分为接触式和非接触式。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Content Organization on Colourful Leaves Studio</title><link>https://colourfulleaves.github.io/tags/content-organization/</link><description>Recent content in Content Organization on Colourful Leaves Studio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 10:06:25 +0800</lastBuildDate><atom:link href="https://colourfulleaves.github.io/tags/content-organization/index.xml" rel="self" type="application/rss+xml"/><item><title>红外测温模块</title><link>https://colourfulleaves.github.io/posts/thermometer/elim/</link><pubDate>Mon, 27 Dec 2021 10:06:25 +0800</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/elim/</guid><description>演示视频 市场常见测温方式 温度测量根据传感器和被测物体关系分为接触式和非接触式。
 接触式测温是指测温传感器与被测物体直接接触，待两者达到热平衡后，测温传感器测量出的温度即为被测物体的温度。由于这种测量方式需等待热平衡完成，所以此种测量方式存在响应时间长，且极易受环境温度的影响的问题。
 非接触式则是指测温传感器与被测物体不直接接触，测温传感器通过测量温度之外的物理量间接的测量出被测物体的温度。由于此种测量方式不需进行热平衡，所以后种方式具有响应速度快、测温范围广、稳定性好等特点。
 红外测温的问题 红外测温是非接触测温中最常见的测温方式。与其它非接触式测温方式一样，它也有响应速度快，测温范围广、稳定性好等优点。但是这种测温方式也不完美。这种测温方式很难同时兼顾测温范围和精度。
@@ -59,7 +35,7 @@ Elim DemoBoard</description></item><item><title>红外测温模块 New</title><l
 电流：&amp;lt;5mA(工作） &amp;lt;50nA(休眠）
 输出接口：IIC或uart
 被测温度范围：-0 ~ 600 °C
-工作温度：-20 ~ 85 °C</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。这是一个CS结构的系统。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。Cali Serverd可以同时为多个CaliWare提供服务。
+工作温度：-20 ~ 85 °C</description></item><item><title>淘宝商品详情页截图</title><link>https://colourfulleaves.github.io/posts/thermometer/post3/</link><pubDate>Sun, 19 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/post3/</guid><description>这是淘宝上一商家的红外测温仪的商品详情页的截图。</description></item><item><title>红外测温之校准</title><link>https://colourfulleaves.github.io/posts/thermometer/cali/</link><pubDate>Wed, 15 Dec 2021 08:06:25 +0600</pubDate><guid>https://colourfulleaves.github.io/posts/thermometer/cali/</guid><description>系统总介 Elim红外测温模块的校准系统如上图所示。这是一个CS结构的系统。在这个CS系统中，CaliServer是Server端。它负责维护全部的校准数据，定义校准过程，也维护整个校准系统用户和其权限。Cali Serverd可以同时为多个CaliWare提供服务。
 CaliWare和及其配属的硬件是作为整个系统的Client端，它用来实现在校准过程中对每个校准点的校准操作。它的主要功能是控制校准点的环境，记录校准数据，计算校准参数和读写模块，与CaliServer互动（上传校准数据和结果，权限管理和更新校准配置信息）。
 这种CS结构设计的优点是：
 采用了权限管理，只有具有授权的人才可以访问校准数据，设置校准流程和校准点数据，确保数据的安全。 校准流程和校准点数据可设置，整个系统可适配多种型号的校准。 支持更灵活的校准产线，可以根据生产情况，随时调整工作流水线的设定，具有更大的生产柔性。 易用的CaliWare，更适合产线操作员。 CaliServer CaliServer是基于python Flask框架编写的一Web App。它的主要作用是：
